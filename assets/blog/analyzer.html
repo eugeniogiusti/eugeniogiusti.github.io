@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Network Analyzer – Detailed Article</title>
+  <link
+    rel="icon"
+    type="image/png"
+    href="https://icons.iconarchive.com/icons/dakirby309/simply-styled/32/OS-Linux-icon.png"
+  />
+  <link
+    rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+  <div id="sidebar">
+    <div class="toggle-sidebar">
+      <i class="las la-bars"></i>
+    </div>
+    <div class="logo">
+      <img src="../images/logo.png" alt="logo" />
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="/mywebsite/#home" class="inner-link"
+            ><i class="las la-home"></i><span>Home</span></a
+          >
+        </li>
+        <li>
+          <a href="/mywebsite/#about_me" class="inner-link"
+            ><i class="las la-address-card"></i><span>About Me</span></a
+          >
+        </li>
+        <li>
+          <a href="/mywebsite/#my_resume" class="inner-link"
+            ><i class="las la-file"></i><span>My Resume</span></a
+          >
+        </li>
+        <li>
+          <a href="/mywebsite/#my_work" class="inner-link"
+            ><i class="las la-briefcase"></i><span>My Work</span></a
+          >
+        </li>
+        <li>
+          <a href="/mywebsite/#blog" class="inner-link active"
+            ><i class="las la-pen-nib"></i><span>Blog</span></a
+          >
+        </li>
+        <li>
+          <a href="/mywebsite/#testimonial" class="inner-link"
+            ><i class="las la-comment-alt"></i>
+            <span>Testimonial</span></a
+          >
+        </li>
+        <li>
+          <a href="/mywebsite/#contact_me" class="inner-link"
+            ><i class="las la-phone"></i><span>Contact Me</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="toggle-mode">
+      <div class="outer" onclick="toggleMode()">
+        <div class="inner"></div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Blog Article Section -->
+    <section id="blog-article" class="active container py-5">
+      <!-- Title -->
+      <header class="custom text-center mb-5">
+        <h2>Network Analyzer Script – Deep Dive</h2>
+      </header>
+
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6">
+          <!-- Image of the analyzer project -->
+          <img
+            src="../images/blog/analyzer.jpg"
+            alt="network analyzer project"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-lg-6 mt-4 mt-lg-0">
+          <p>
+            Welcome to a deeper look into my <strong>Network Analyzer Script</strong>!
+            This Bash script automates essential network troubleshooting tasks by
+            combining some of the best open-source tools out there:
+            <code>tcpdump</code>, <code>ping</code>, <code>traceroute</code>,
+            <code>dig</code>, and <code>nmap</code>.
+          </p>
+          <p>
+            The goal? To simplify how sysadmins and engineers gather critical
+            information about network paths, DNS, open ports, and packet captures.
+            Everything is saved into a <code>.txt</code> report for quick reference
+            and a <code>.pcap</code> file for deeper analysis in tools like
+            Wireshark.
+          </p>
+          <p>
+            I created and tested this on <em>MX Linux</em> (Debian-based), but it
+            should work on most Linux distros with minimal modifications — as long
+            as the required packages are installed.
+          </p>
+        </div>
+      </div>
+
+      <!-- Embedded Video -->
+      <div class="mb-5">
+        <h3 class="mb-3">Video Demo</h3>
+        <div class="ratio ratio-16x9 rounded shadow">
+          <iframe
+            src="https://www.youtube.com/embed/j3VJVN3bZCw"
+            title="Network Analyzer Demo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Why it's useful -->
+      <div class="mb-5">
+        <h3>Why It’s Useful</h3>
+        <ul>
+          <li>
+            <strong>End-to-end diagnostics:</strong> checking connectivity,
+            traceroute paths, DNS resolution, and open ports.
+          </li>
+          <li>
+            <strong>Real-time capture:</strong> <code>tcpdump</code> records
+            traffic related to your target, so you can see exactly what’s happening.
+          </li>
+          <li>
+            <strong>Easy reporting:</strong> The script spits out a text-based
+            summary, plus the packet capture for advanced troubleshooting.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Usage Steps -->
+      <div class="mb-5">
+        <h3>Usage Steps</h3>
+        <ol>
+          <li>
+            <strong>Install dependencies:</strong>
+            <code>tcpdump</code>, <code>ping</code>, <code>traceroute</code>,
+            <code>dig</code>, <code>nmap</code>.
+          </li>
+          <li>
+            <strong>Clone or download</strong> the repository from GitHub.
+          </li>
+          <li>
+            <strong>Make the script executable:</strong> <br />
+            <code>chmod +x network_analyzer.sh</code>
+          </li>
+          <li>
+            <strong>Run it:</strong> <br />
+            <code>./network_analyzer.sh &lt;targetIP_or_domain&gt;</code>
+          </li>
+          <li>
+            <strong>Follow the prompts</strong> — the script will ask if you want
+            to do a DNS check, port scan, etc.
+          </li>
+          <li>
+            <strong>Perform manual testing</strong> (like SSH or web login) while
+            <code>tcpdump</code> is running.
+          </li>
+        </ol>
+      </div>
+
+      <!-- Example Script Snippet -->
+      <div class="mb-5">
+        <h3>Script Snippet</h3>
+        <pre class="bg-dark text-white p-3 rounded"><code>#!/bin/bash
+
+# Step 1: Start tcpdump
+sudo tcpdump -i any host "$target_ip" -w "$pcap_file" &
+
+# Step 2: Ping
+ping -c 10 "$target_ip"
+
+# Step 3: Traceroute
+traceroute "$target_ip"
+
+# Step 4: Optional DIG check
+...
+
+# Step 5: Optional Nmap check
+...
+
+# Final: Stop tcpdump, save results in .txt + .pcap</code></pre>
+      </div>
+
+      <!-- Additional Info -->
+      <div class="mb-5">
+        <h3>Additional Insights</h3>
+        <p>
+          The script is intentionally interactive. After each stage, you can decide
+          whether or not to do the next step. You can also do <strong>manual
+          tests</strong> while the script is capturing traffic. For instance, if you
+          want to log in to a web application or run an SSH session to replicate
+          an issue, this traffic gets saved in the <code>.pcap</code>.
+        </p>
+        <p>
+          Once you’ve confirmed your tests, you type <code>ok</code> and press
+          ENTER, which stops <code>tcpdump</code>. The script then finalizes the
+          text report, kills the background capture, and you’re left with a concise
+          snapshot of what just happened in your network environment.
+        </p>
+      </div>
+
+      <!-- CTA Buttons -->
+      <div class="d-flex flex-wrap gap-3 justify-content-center mt-5">
+        <a
+          href="https://github.com/eugeniogiusti/network-analyzer"
+          target="_blank"
+          class="btn btn-custom-blue"
+        >
+          <i class="lab la-github"></i> View on GitHub
+        </a>
+        <a
+          href="https://raw.githubusercontent.com/eugeniogiusti/network-analyzer/main/network_analyzer.sh"
+          download
+          class="btn btn-custom-dark"
+        >
+          <i class="las la-download"></i> Download Script
+        </a>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../../../assets/js/script.js"></script>
+</body>
+
+</html>
