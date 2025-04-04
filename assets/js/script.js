@@ -148,7 +148,7 @@ function toggleMode() {
     document.querySelector('html').setAttribute("theme", theme)
 }
 
-fetch('assets/blog/posts.json')
+fetch('/assets/blog/posts.json')
   .then(res => res.json())
   .then(articles => {
     const container = document.getElementById('blog-articles');
