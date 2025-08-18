@@ -4,7 +4,7 @@
     "date": "2025-08-18",
     "description": "Come ho sviluppato PraticaFlow, il primo software gestionale specifico per CAF e agenzie pratiche stranieri. WhatsApp integrato, Google Calendar automatico, checklist documenti intelligenti.",
     "link": "/assets/blog/praticaflow.html", 
-    "image": "/assets/images/blog/praticaflow.jpg"
+    "image": "/assets/images/blog/praticaflow.png"
   },
   {
     "title": "Integrazione Google Calendar per CAF",
@@ -32,14 +32,14 @@
     "date": "2025-08-18",
     "description": "Gestionale specifico per agenzie che si occupano di pratiche per stranieri: permessi soggiorno, cittadinanza, ricongiungimenti. Funzioni dedicate e workflow ottimizzati.",
     "link": "/assets/blog/software-agenzie-stranieri.html",
-    "image": "/assets/images/blog/agenzie-stranieri.jpg"
+    "image": "/assets/images/blog/agenzie-stranieri.png"
   },
   {
     "title": "Come digitalizzare un CAF nel 2025",
     "date": "2025-08-18",
     "description": "Guida completa per digitalizzare un Centro Assistenza Fiscale: dai processi cartacei al gestionale digitale. Analisi costi, benefici e piano implementazione.",
     "link": "/assets/blog/digitalizzare-caf-2025.html",
-    "image": "/assets/images/blog/digitalizzare-caf.jpg"
+    "image": "/assets/images/blog/digitalizzare-caf.png"
   },
   {
     "title": "Network Analyzer Project",
