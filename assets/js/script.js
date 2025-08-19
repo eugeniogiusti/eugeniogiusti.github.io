@@ -157,10 +157,14 @@ function toggleMode() {
     document.querySelector('html').setAttribute("theme", theme)
 }
 
-fetch('https://eugeniogiustitechsolutions.com/assets/blog/posts.json')
+fetch('https://eugeniogiustitechsolutions.com/assets/blog/posts.json?v=20250819', { cache: 'no-store' })
   .then(res => res.json())
   .then(articles => {
     const container = document.getElementById('blog-articles');
+
+    // Ordina articoli dalla data più recente alla più vecchia
+    articles.sort((a, b) => new Date(b.date) - new Date(a.date));
+
     articles.forEach(article => {
       const col = document.createElement('div');
       col.className = 'col-md-6 col-lg-4 mb-4';
@@ -181,6 +185,7 @@ fetch('https://eugeniogiustitechsolutions.com/assets/blog/posts.json')
     });
   })
   .catch(error => console.error("Error loading blog posts:", error));
+
   // Handle direct URL access with #hash (deep linking)
 window.addEventListener('DOMContentLoaded', () => {
     const hash = window.location.hash;

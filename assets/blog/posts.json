@@ -1,4 +1,25 @@
 [
+    {
+    "title": "3 motivi per cui Excel non basta più",
+    "date": "2025-08-19",
+    "description": "Perché Excel non è più sufficiente per gestire clienti e pratiche. Scopri i 3 motivi principali e l’alternativa.",
+    "link": "/assets/blog/excel-non-basta.html",
+    "image": "/assets/images/blog/excel-non-basta.jpg"
+  },
+  {
+    "title": "Il caos quotidiano senza gestionale",
+    "date": "2025-08-19",
+    "description": "Cartelle piene di file, agende cartacee e pagamenti a mano: il caos negli studi senza gestionale. Ecco come evitarlo.",
+    "link": "/assets/blog/caos-quotidiano.html",
+    "image": "/assets/images/blog/caos-quotidiano.jpg"
+  },
+  {
+    "title": "Digitalizzarsi non è più un optional: la domanda giusta non è se, ma quando",
+    "date": "2025-08-19",
+    "description": "Per studi e agenzie la digitalizzazione non è più un’opzione. La domanda non è se, ma quando iniziare.",
+    "link": "/assets/blog/digitalizzarsi-non-e-piu-un-optional.html",
+    "image": "/assets/images/blog/digitalizzarsi-non-optional.jpg"
+  },
   {
     "title": "PraticaFlow - Gestionale per CAF e Agenzie Pratiche",
     "date": "2025-08-18",
