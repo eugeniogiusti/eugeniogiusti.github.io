@@ -19,7 +19,7 @@ document.querySelector('#sidebar .toggle-sidebar').addEventListener('click', fun
 
 
 var options = {
-    strings: ['Cloud Computing Services', 'IT Infrastructure Solutions', 'Web Application Development', 'Server Management'],
+    strings: ['SaaS Products', 'IT Infrastructure Solutions', 'Web Application Development', 'Cloud Computing Services'],
     loop: true,
     typeSpeed: 60,    
     backSpeed: 40,    
