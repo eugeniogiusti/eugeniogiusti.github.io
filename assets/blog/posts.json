@@ -1,5 +1,26 @@
 [
-    {
+  {
+    "title": "Dettaglio pratica: tutto in un’unica schermata",
+    "date": "2025-08-20",
+    "description": "Scopri la pagina di dettaglio pratica in PraticaFlow: appuntamenti, task, documenti, pagamenti e riepilogo cliente sempre sotto controllo.",
+    "link": "/assets/blog/dettaglio-pratica.html",
+    "image": "/assets/images/blog/dettaglio-pratica.jpg"
+  },
+  {
+    "title": "PraticaFlow in pratica: come può semplificare davvero il lavoro quotidiano",
+    "date": "2025-08-20",
+    "description": "Un esempio reale di come PraticaFlow riduce il caos, risparmia tempo e rende più fluido il lavoro quotidiano negli studi.",
+    "link": "/assets/blog/praticaflow-in-pratica.html",
+    "image": "/assets/images/blog/praticaflow-in-pratica.jpg"
+  },
+  {
+    "title": "Perché scegliere PraticaFlow: il gestionale completo per CAF e agenzie",
+    "date": "2025-08-20",
+    "description": "Perché PraticaFlow è la scelta giusta per CAF e agenzie: un gestionale completo che unisce dashboard, documenti, appuntamenti e automazioni in un solo posto.",
+    "link": "/assets/blog/perche-scegliere-praticaflow.html",
+    "image": "/assets/images/blog/perche-scegliere-praticaflow.jpg"
+  },
+  {
     "title": "3 motivi per cui Excel non basta più",
     "date": "2025-08-19",
     "description": "Perché Excel non è più sufficiente per gestire clienti e pratiche. Scopri i 3 motivi principali e l’alternativa.",
