@@ -752,15 +752,35 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-6">
-        <div class="card p-4 shadow-lg rounded-4 text-center bg-dark text-light">
-          <h3 class="mb-3">Contattami!</h3>
-          <p class="mb-4">Scrivimi via email, ti risponderò il prima possibile:</p>
-          <a href="mailto:info@eugeniogiustitechsolutions.com" class="text-info">info@eugeniogiustitechsolutions.com</a>
+        <div class="card p-4 shadow-lg rounded-4 bg-dark text-light">
+          <h3 class="mb-3 text-center">Contattami!</h3>
+          <p class="mb-4 text-center">Compila il form qui sotto, ti risponderò il prima possibile:</p>
+          
+          <!-- Formspree -->
+          <form action="https://formspree.io/f/xvgbdpqq" method="POST">
+            <!-- Honeypot anti-spam -->
+            <input type="text" name="_gotcha" style="display:none">
+            
+            <div class="mb-3">
+              <input type="text" name="name" class="form-control" placeholder="Il tuo nome *" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" name="email" class="form-control" placeholder="La tua email *" required>
+            </div>
+            <div class="mb-3">
+              <textarea name="message" class="form-control" rows="4" placeholder="Scrivi il tuo messaggio..." required></textarea>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-info text-white fw-bold">Invia</button>
+            </div>
+          </form>
+          <!-- /Formspree -->
         </div>
       </div>
     </div>
   </div>
 </section>
+
     </main>
    <footer class="text-center py-4">
         <div class="container">
