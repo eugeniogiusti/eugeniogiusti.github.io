@@ -1,14 +1,26 @@
 let navLinks = document.querySelectorAll('a.inner-link');
 
 navLinks.forEach((item) => {
-    item.addEventListener('click', function () {
-        console.log(item)
-        document.querySelector('nav ul li a.active').classList.remove('active')
-        document.querySelector(`nav ul li a[href='${item.getAttribute('href')}']`).classList.add('active')
-        document.querySelector('main > section.active').classList.remove('active')
-        document.querySelector(`main > section${item.getAttribute('href')}`).classList.add('active');
-    })
-})
+  item.addEventListener('click', function (e) {
+    const href = item.getAttribute('href');
+    if (href && href.startsWith('#')) {
+      e.preventDefault();
+
+      const currentActiveLink = document.querySelector('nav ul li a.active');
+      if (currentActiveLink) currentActiveLink.classList.remove('active');
+
+      const targetLink = document.querySelector(`nav ul li a[href='${href}']`);
+      if (targetLink) targetLink.classList.add('active');
+
+      const currentSection = document.querySelector('main > section.active');
+      if (currentSection) currentSection.classList.remove('active');
+
+      const targetSection = document.querySelector(`main > section${href}`);
+      if (targetSection) targetSection.classList.add('active');
+    }
+  });
+});
+
 
 
 
@@ -49,20 +61,20 @@ const shuffleInstance = new Shuffle(document.querySelector('#my_work .work-items
 const filterButtons = document.querySelectorAll('#my_work .filters button')
 
 filterButtons.forEach((item) => {
-    item.addEventListener('click', workFilter)
-})
+  item.addEventListener('click', workFilter);
+});
 
+function workFilter(e) {
+  const clickedButton = e.currentTarget;
+  const clickedButtonGroup = clickedButton.getAttribute('data-group');
+  const activeButton = document.querySelector('#my_work .filters button.active');
 
-function workFilter() {
-    const clickedButton = event.currentTarget;
-    const clickedButtonGroup = clickedButton.getAttribute('data-group');
-    const activeButton = document.querySelector('#my_work .filters button.active');
+  if (activeButton) activeButton.classList.remove('active');
+  clickedButton.classList.add('active');
 
-    activeButton.classList.remove('active');
-    clickedButton.classList.add("active");
-
-    shuffleInstance.filter(clickedButtonGroup)
+  shuffleInstance.filter(clickedButtonGroup);
 }
+
 
 var workModal = new bootstrap.Modal(document.getElementById('workModal'))
 const workElements = document.querySelectorAll("#my_work .work-items .wrap");
@@ -202,4 +214,23 @@ window.addEventListener('DOMContentLoaded', () => {
       if (navLink) navLink.classList.add('active');
       if (targetSection) targetSection.classList.add('active');
     }
-  });  
+  });
+
+  // === Mailto offuscato (per i bottoni con .js-mailto) ===
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll(".js-mailto");
+  links.forEach((el) => {
+    const user = el.dataset.u || "";
+    const domain = el.dataset.d || "";
+    const subject = encodeURIComponent(el.dataset.subject || "");
+    const body = encodeURIComponent(el.dataset.body || "");
+    if (!user || !domain) return;
+
+    const params = [];
+    if (subject) params.push(`subject=${subject}`);
+    if (body) params.push(`body=${body}`);
+
+    const href = `mailto:${user}@${domain}${params.length ? "?" + params.join("&") : ""}`;
+    el.setAttribute("href", href);
+  });
+});

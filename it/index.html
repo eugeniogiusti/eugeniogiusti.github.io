@@ -738,7 +738,7 @@
                 </div>
             </section>
         </section>
-        <section id="contact_me" class="py-5">
+   <section id="contact_me" class="py-5">
   <div class="text-center mb-4">
     <header class="has-bg">
       <img src="/assets/images/h1-bg.png" alt="h1 bg">
@@ -752,29 +752,23 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-6">
-        <div class="card p-4 shadow-lg rounded-4 bg-dark text-light">
-          <h3 class="mb-3 text-center">Contattami!</h3>
-          <p class="mb-4 text-center">Compila il form qui sotto, ti risponderò il prima possibile:</p>
-          
-          <!-- Formspree -->
-          <form action="https://formspree.io/f/xldwarkk" method="POST">
-            <!-- Honeypot anti-spam -->
-            <input type="text" name="_gotcha" style="display:none">
-            
-            <div class="mb-3">
-              <input type="text" name="name" class="form-control" placeholder="Il tuo nome *" required>
-            </div>
-            <div class="mb-3">
-              <input type="email" name="email" class="form-control" placeholder="La tua email *" required>
-            </div>
-            <div class="mb-3">
-              <textarea name="message" class="form-control" rows="4" placeholder="Scrivi il tuo messaggio..." required></textarea>
-            </div>
-            <div class="d-grid">
-              <button type="submit" class="btn btn-info text-white fw-bold">Invia</button>
-            </div>
-          </form>
-          <!-- /Formspree -->
+        <div class="card p-4 shadow-lg rounded-4 bg-dark text-light text-center">
+          <h3 class="mb-3">Contattami!</h3>
+          <p class="mb-4">Clicca qui sotto per scrivermi via email:</p>
+
+          <!-- Bottone email -->
+          <a class="js-mailto btn btn-info text-white fw-bold"
+             data-u="info"
+             data-d="eugeniogiustitechsolutions.com"
+             data-subject="Richiesta informazioni"
+             data-body="Ciao, vorrei parlarti di un progetto.">
+             Scrivimi via email
+          </a>
+
+          <!-- Fallback per chi ha JS disattivato -->
+          <noscript>
+            <p class="mt-3">Email: info [chiocciola] eugeniogiustitechsolutions [punto] com</p>
+          </noscript>
         </div>
       </div>
     </div>
