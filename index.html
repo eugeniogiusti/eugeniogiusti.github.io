@@ -7,13 +7,28 @@
   <script>
     (function () {
       const langs = navigator.languages || [navigator.language || navigator.userLanguage];
+      
+      // Controlla se preferisce italiano
       const prefersItalian = langs.some(l => l.toLowerCase().startsWith('it'));
-      window.location.replace(prefersItalian ? "/it/" : "/en/");
+      
+      // Controlla se preferisce spagnolo
+      const prefersSpanish = langs.some(l => l.toLowerCase().startsWith('es'));
+      
+      // Reindirizza in base alla lingua preferita
+      if (prefersItalian) {
+        window.location.replace("/it/");
+      } else if (prefersSpanish) {
+        window.location.replace("/es/");
+      } else {
+        window.location.replace("/en/");
+      }
     })();
   </script>
 </head>
 <body>
   <p>Reindirizzamento in corso in base alla lingua del tuo browser...</p>
-  <p>Se non vieni reindirizzato automaticamente, <a href="/en/">clicca qui</a>.</p>
+  <p>Redirecting based on your browser language...</p>
+  <p>Redirigiendo según el idioma de tu navegador...</p>
+  <p>Se non vieni reindirizzato automaticamente: <a href="/it/">Italiano</a> | <a href="/en/">English</a> | <a href="/es/">Español</a></p>
 </body>
 </html>

@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="es" theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <!-- Canonical & hreflang para versión española -->
+<link rel="canonical" href="https://eugeniogiustitechsolutions.com/es/index.html" />
+<link rel="alternate" hreflang="en" href="https://eugeniogiustitechsolutions.com/en/index.html" />
+<link rel="alternate" hreflang="es" href="https://eugeniogiustitechsolutions.com/es/index.html" />
+<link rel="alternate" hreflang="it" href="https://eugeniogiustitechsolutions.com/it/index.html" />
+<link rel="alternate" hreflang="x-default" href="https://eugeniogiustitechsolutions.com/" />
+
+<!-- Título y descripción optimizados -->
+<title>Eugenio Giusti – Desarrollador Web, Ingeniero de Sistemas, Experto en Servicios Cloud, Desarrollo web</title>
+<meta name="description" content="Eugenio Giusti es un Desarrollador Web e Ingeniero de Sistemas con 10 años de experiencia en servicios cloud y on-premise, optimización de sistemas operativos y desarrollo web. Descubre soluciones personalizadas para tu negocio.">
+<meta name="robots" content="index, follow">
+
+<meta name="author" content="Eugenio Giusti">
+<meta name="keywords" content="Desarrollo Web, Web development, System Engineer, Ingeniero de Sistemas, Consultor IT, Cloud, AWS, Linux, DevOps, consultoría informática, Eugenio Giusti, Desarrollador php, Ubuntu">
+
+<!-- Meta Tags Open Graph para compartir en redes sociales -->
+<meta property="og:title" content="Eugenio Giusti – Consultor IT, Servicios Cloud, Ingeniero de Sistemas & Desarrollo Web">
+<meta property="og:description" content="Eugenio Giusti es un Desarrollador Web e Ingeniero de Sistemas con 10 años de experiencia en servicios cloud, optimización de sistemas y desarrollo web.">
+<meta property="og:url" content="https://eugeniogiustitechsolutions.com/index-es.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://eugeniogiustitechsolutions.com/assets/images/logo.png">
+
+<!-- Datos estructurados (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Eugenio Giusti",
+  "url": "https://eugeniogiustitechsolutions.com",
+  "sameAs": [
+    "https://www.linkedin.com/in/eugenio-giusti/",
+    "https://github.com/eugeniogiusti/",
+    "https://www.youtube.com/@EugenioGiustiTechsolutions"
+  ],
+  "jobTitle": "Desarrollador web, Ingeniero de Sistemas y Experto en Servicios Cloud",
+  "description": "Eugenio Giusti es un profesional IT con 10 años de experiencia en ingeniería de sistemas, servicios cloud y desarrollo web."
+}
+</script>
+
+<link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <div id="sidebar">
+        <div class="toggle-sidebar">
+            <i class="las la-bars"></i>
+        </div>
+        <div class="logo">
+            <img src="/assets/images/logo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home" class="active inner-link">
+                        <i class="las la-home"></i>
+                        <span>Inicio</span>
+                    </a>
+                    <span>Inicio</span>
+                </li>
+                <li>
+                    <a href="#about_me" class="inner-link">
+                        <i class="las la-address-card"></i>
+                        <span>Mis competencias</span>
+                    </a>
+                    <span>Mis competencias</span>
+                </li>
+
+                <li>
+                <a href="#services" class="inner-link">
+                <i class="las la-cogs"></i>
+                <span>Servicios</span>
+                    </a>
+                    <span>Qué puedo ofrecerte</span>
+                </li>
+
+                <li>
+                    <a href="#my_resume" class="inner-link">
+                        <i class="las la-file"></i>
+                        <span>Mi Trayectoria</span>
+                    </a>
+                    <span>Mi Trayectoria</span>
+                </li>
+                <li>
+                    <a href="#my_work" class="inner-link">
+                        <i class="las la-briefcase"></i>
+                        <span>Mis Trabajos</span>
+                    </a>
+                    <span>Mis Trabajos</span>
+                </li>
+                <li>
+                    <a href="#blog" class="inner-link">
+                        <i class="las la-pen-nib"></i>
+                        <span>Blog</span>
+                    </a>
+                    <span>Blog</span>
+                </li>
+                <li>
+                    <a href="#testimonial" class="inner-link">
+                        <i class="las la-comment-alt"></i>
+                        <span>Testimonios</span>
+                    </a>
+                    <span>Testimonios</span>
+                </li>
+                <li>
+                    <a href="#contact_me" class="inner-link">
+                        <i class="las la-phone"></i>
+                        <span>Contáctame</span>
+                    </a>
+                    <span>Contáctame</span>
+                </li>
+            </ul>
+        </nav>
+        <div class="toggle-mode">
+            <div class="outer" onclick="toggleMode()">
+                <div class="inner"></div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section id="home" class="active">
+            <div class="meteor-shower"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 info">
+                        <h1 style="font-size: 2.5rem;"><span>👋 Hola, </span>soy Eugenio y este es mi sitio web 🌐 </h1>
+                         <div class="field">
+                            <h2 class="typed-text"></h2>
+                        </div>
+                        <style>
+                            .card-gradient {
+                                background: linear-gradient(145deg, rgba(59, 130, 246, 0.1), rgba(6, 182, 212, 0.1));
+                                transition: all 0.3s ease;
+                            }
+
+                            .card-gradient:hover {
+                                transform: translateY(-5px);
+                                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                            }
+
+                            .about-sections {
+                                margin: 2em 0;
+                            }
+
+                            .about-sections .section {
+                                padding: 1.5rem;
+                                margin-bottom: 1.5rem;
+                                border-radius: 0.75rem;
+                            }
+
+                            .section h3 {
+                                font-weight: 700;
+                                margin-bottom: 1rem;
+                            }
+                        </style>
+                <div class="about-sections">
+                    <div class="section card-gradient">
+                        <h3>Quién soy y cómo puedo ayudarte</h3>
+                        <p>
+                            Soy un profesional IT con 10 años de experiencia en infraestructuras IT y desarrollo web.
+                            Diseño, implemento y mantengo sistemas robustos, desde servidores on-premise hasta entornos cloud, garantizando rendimiento, escalabilidad y seguridad.
+                            También desarrollo herramientas web personalizadas que simplifican los flujos de trabajo y resuelven desafíos empresariales reales.
+                            Con un enfoque práctico y una sólida base técnica, ofrezco soluciones completas que apoyan a las empresas modernas desde los cimientos.
+                        </p>
+                    </div>
+                    <div class="section card-gradient">
+                        <h3>Mi Visión</h3>
+                        <p>
+                            Mi visión es simple: usar la tecnología para resolver problemas concretos.
+                            Creo en soluciones prácticas, accesibles y a medida que simplifiquen el trabajo, aumenten la eficiencia y hagan ahorrar tiempo y recursos.
+                            Mi objetivo es crear herramientas que ayuden a las personas a trabajar mejor, con menos estrés y más control.
+                        </p>
+                    </div>
+                        </div> 
+                        <div class="socials">
+                            <ul>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/eugenio-giusti/" target="_blank">
+                                        <i class="lab la-linkedin-in"></i>
+                                        <span>Linkedin</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/eugeniogiusti/" target="_blank">
+                                        <i class="lab la-github"></i>
+                                        <span>Github</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/@EugenioGiustiTechsolutions" target="_blank">
+                                        <i class="lab la-youtube"></i>
+                                        <span>YouTube</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 image">
+                        <img src="/assets/images/person-home.png" alt="persona inicio">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about_me">
+            <div class="container">
+                <div class="row hero">
+                    <div class="col-xxl-6 col-lg-4 image">
+                        <img src="/assets/images/person-about.png" alt="persona acerca de">
+                    </div>
+                    <div class="col-xxl-6 col-lg-8 info">
+                        <header class="has-bg">
+                            <img src="/assets/images/h1-bg.png" alt="h1 bg">
+                            <img src="/assets/images/h1-bg-light.png" alt="h1 bg">
+                            <h1>Mis competencias</h1>
+                        </header>
+                        <p>
+                            Trabajo en plataformas Linux y Windows, gestionando virtualización, networking, endurecimiento de sistemas y automatización.
+                            Paralelamente a mi trabajo como ingeniero de sistemas, diseño y desarrollo aplicaciones web para simplificar procesos, digitalizar flujos de trabajo y satisfacer necesidades empresariales reales.
+                            Ya sea distribuyendo máquinas virtuales o creando herramientas a medida para profesionales y equipos, me enfoco en proporcionar soluciones confiables, seguras y escalables.
+                            Impulsado por una mentalidad práctica y una pasión por el código abierto, creo en resolver problemas con tecnologías limpias, eficientes y mantenibles.
+                        </p>
+                        <div class="items">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-6 ps-0">
+                                        <div class="item"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row languages-skills">
+                    <div class="col-lg-6 languages-key-skills">
+                        <div class="languages">
+                            <header class="custom">
+                                <h2>Idiomas que hablo</h2>
+                            </header>
+                            <ul class="items">
+                                <li class="item">
+                                    <div class="info">
+                                        <h3>Italiano</h3>
+                                        <span class="level">Lengua materna</span>
+                                    </div>
+                                    <div class="rate"></div>
+                                </li>
+                                <li class="item">
+                                    <div class="info">
+                                        <h3>Inglés</h3>
+                                        <span class="level">Competencia profesional</span> 
+                                    </div>
+                                    <div class="rate"></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="key-skills">
+                            <header class="custom">
+                                <h2>Competencias Clave</h2>
+                            </header>
+                            <ul class="items">
+                                <li class="item">
+                                    <h3>Resolución de Problemas</h3>
+                                    <div class="rate">
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <h3>Trabajo en equipo</h3>
+                                    <div class="rate">
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                    </div>
+                                </li>
+                                <li class="item">
+                                    <h3>Comunicación</h3>
+                                    <div class="rate">
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                        <span class="fill"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 web-skills mt-5 mt-lg-0">
+                        <header class="custom">
+                            <h2>Tecnologías que utilizo</h2>
+                        </header>
+                        <div class="container">
+                            <div class="items row">
+                                <div class="col-xl-4 col-sm-6 px-2">
+                                    <div class="item">
+                                        <img src="/assets/images/web skills/html5.png" alt="html5">
+                                        <h3>Linux</h3>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6 px-2">
+                                    <div class="item">
+                                        <img src="/assets/images/web skills/css3.png" alt="css3">
+                                        <h3>Bash</h3>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6 px-2">
+                                    <div class="item">
+                                        <img src="/assets/images/web skills/bootstrap.png" alt="bootstrap">
+                                        <h3>PHP</h3>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6 px-2">
+                                    <div class="item">
+                                        <img src="/assets/images/web skills/vuejs.png" alt="vuejs">
+                                        <h3>aws</h3>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6 px-2">
+                                    <div class="item">
+                                        <img src="/assets/images/web skills/js.png" alt="JavaScript">
+                                        <h3>Mysql</h3>
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-sm-6 px-2">
+                                    <div class="item">
+                                        <img src="/assets/images/web skills/jquery.png" alt="jQuery">
+                                        <h3>Cisco</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="certificates">
+                    <header class="custom">
+                        <h2>Mis Certificaciones</h2>
+                    </header>
+                    <div class="items row justify-content-center">
+                        <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 item">
+                            <img src="/assets/images/certifications/1.png" alt="certificación">
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 item">
+                            <img src="/assets/images/certifications/2.png" alt="certificación">
+                        </div>
+                        <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 item">
+                            <img src="/assets/images/certifications/3.png" alt="certificación">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section id="services" class="py-5">
+  <div class="text-center mb-4">
+    <header class="has-bg">
+      <img src="/assets/images/h1-bg.png" alt="h1 bg">
+      <img src="/assets/images/h1-bg-light.png" alt="h1 bg">
+      <h1>Qué puedo ofrecerte</h1>
+    </header>
+    <p class="mt-3">Servicios IT a medida para apoyar el crecimiento de tu negocio y la transformación digital.</p>
+  </div>
+
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="card-gradient p-4 rounded-4 h-100">
+          <i class="las la-server fs-1 mb-3"></i>
+          <h4>Ingeniería de Sistemas</h4>
+          <p>Gestiono servidores Linux/Windows, optimizo las redes y realizo soluciones on-premise, incluyendo VPN para el trabajo remoto e infraestructuras directamente en sede.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card-gradient p-4 rounded-4 h-100">
+          <i class="las la-cloud fs-1 mb-3"></i>
+          <h4>Servicios Cloud</h4>
+          <p>Ayudo a las empresas a migrar al cloud con soluciones modernas, seguras y a medida para sus necesidades.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card-gradient p-4 rounded-4 h-100">
+          <i class="las la-code fs-1 mb-3"></i>
+          <h4>Web y Automatización</h4>
+          <p>Creo sitios, SaaS y herramientas a medida para valorar la actividad del cliente, automatizar los flujos de trabajo y aumentar la productividad.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        <section id="my_resume">
+            <div class="text-center">
+                <header class="has-bg">
+                    <img src="/assets/images/h1-bg.png" alt="h1 bg">
+                    <img src="/assets/images/h1-bg-light.png" alt="h1 bg">
+                    <h1>Mi trayectoria</h1>
+                </header>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 education">
+                        <header class="custom">
+                            <h2>Formación</h2>
+                        </header>
+                        <div class="items">
+                            <div class="item last">
+                                <div class="icon">
+                                    <i class="las la-university"></i>
+                                </div>
+                                <div class="box">
+                                    <span class="year">2025</span>
+                                    <h2 class="title">En continuo aprendizaje</h2>
+                                    <p>Me dedico constantemente a ampliar mis competencias en tecnologías on-premise, 
+                                        cloud y web. Además de la administración de sistemas y la automatización de infraestructuras, 
+                                        estudio el desarrollo de aplicaciones web basadas en stack open-source (como LAMP) para resolver problemas 
+                                        empresariales y apoyar flujos de trabajo digitales. He completado varias certificaciones y 
+                                        mantengo el ritmo con las últimas tendencias IT y desarrollo web, con el objetivo de construir 
+                                        infraestructuras y herramientas seguras.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon">
+                                    <i class="las la-university"></i>
+                                </div>
+                                <div class="box">
+                                    <span class="year">2024</span>
+                                    <h2 class="title">Crecimiento Formativo entre Infraestructura y Desarrollo Web</h2>
+                                    <p> Durante mi trayectoria formativa he obtenido las certificaciones Linux Essentials y Microsoft Server 
+                                        Fundamentals, profundizando en infraestructuras, sistemas operativos y redes. He combinado la teoría con la práctica 
+                                        trabajando en entornos Windows/Linux y colaborando con
+                                         los equipos de desarrollo para realizar scripts de automatización y personalizaciones en aplicaciones web. </p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon">
+                                    <i class="las la-university"></i>
+                                </div>
+                                <div class="box">
+                                    <span class="year">2013</span>
+                                    <h2 class="title">Electrónica y Networking: Un Sólido Conjunto de Competencias Técnicas</h2>
+                                    <p> Mi diploma como técnico me proporcionó bases sólidas en electrónica y arquitectura de computadoras. 
+                                        Luego gracias a la certificación Cisco CCNA profundicé en temas como la gestión de redes, la configuración de switches, routers, 
+                                        y la resolución de problemas relacionados con la seguridad y el rendimiento de las infraestructuras.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 experience">
+                        <header class="custom">
+                            <h2>Experiencia</h2>
+                        </header>
+                        <div class="items">
+                            <div class="item last">
+                                <div class="icon">
+                                    <i class="las la-briefcase"></i>
+                                </div>
+                                <div class="box">
+                                    <span class="year">2025</span>
+                                    <h2 class="title">En Curso</h2>
+                                    <p>Actualmente trabajo como Consultor IT Independiente, especializado en optimización de infraestructuras y servicios cloud. 
+                                        Además de gestionar máquinas virtuales, networking y automatización, diseño y distribuyo soluciones web ligeras (como dashboards, herramientas internas 
+                                        o plataformas basadas en CMS) para apoyar las operaciones empresariales. Me apasiona proporcionar soluciones a medida que combinan fiabilidad, 
+                                        eficiencia y usabilidad.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon">
+                                    <i class="las la-briefcase"></i>
+                                </div>
+                                <div class="box">
+                                    <span class="year">2022</span>
+                                    <h2 class="title">Sistemas IT y Soluciones Web</h2>
+                                    <p>Durante la transición en el rol de Ingeniero de Sistemas, he operado en un datacenter enfocado 
+                                        en servicios cloud, gestionando VMs, soluciones SaaS y plataformas web. Me he ocupado de la distribución 
+                                        y monitorización de la infraestructura, trabajando en entornos virtualizados y colaborando con los equipos de desarrollo para integrar aplicaciones web. 
+                                        Esta trayectoria ha fortalecido mi experiencia 
+                                        en entornos híbridos y mi enfoque en soluciones flexibles, seguras y orientadas al cloud.</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon">
+                                    <i class="las la-briefcase"></i>
+                                </div>
+                                <div class="box">
+                                    <span class="year">2014</span>
+                                    <h2 class="title">Técnico Hardware y Software</h2>
+                                    <p>Cuando me convertí en técnico IT, adquirí experiencia práctica en sistemas operativos, networking y hardware. He resuelto problemas de configuración, 
+                                        gestionado redes locales y aprendido los principales protocolos. Me he ocupado del diagnóstico y reparación de 
+                                        componentes físicos, construyendo así una base técnica completa, que integra competencias de software y hardware.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="my_work">
+            <div class="text-center">
+                <header class="has-bg">
+                    <img src="/assets/images/h1-bg.png" alt="h1 bg">
+                    <img src="/assets/images/h1-bg-light.png" alt="h1 bg">
+                    <h1>Mis Trabajos</h1>
+                </header>
+            </div>
+            <div class="filters">
+                <button data-group="all" class="active">
+                    <h4>Proyectos</h4>
+                </button>
+            </div>
+            <div class="container">
+    <div class="row work-items">
+        <div class="col-sm-6 col-lg-4 item" data-groups='["Desarrollo Web", "SEO"]'>
+            <div 
+                class="wrap"
+                data-image="/assets/images/works/1.png"
+                data-title="Monitorización smart para Infraestructuras Cloud con Zabbix"
+                data-description="Implementé una solución completa de monitorización para una infraestructura de hosting utilizando Zabbix 6.4. El entorno incluía 90 máquinas virtuales (tanto Linux como Windows), 4 virtualizadores en un clúster hiperconvergente, 2 switches capa 2, 2 firewalls en HA y un NAS empresarial que realizaba los backups de las VMs. Esta implementación mejoró notablemente la fiabilidad de la infraestructura y mejoró la detección proactiva de problemas."
+                data-client="Empresa de consultoría | servicios de hosting | proveedor de servicios cloud"
+                data-completed="Noviembre 2023"
+                data-skills="Zabbix, Linux, Monitorización, Automatización, Infraestructura Hosting, Cloud"
+                data-project-link="https://github.com/eugeniogiusti/zabbix-datacenter-monitoring"
+            >
+                <img src="/assets/images/works/1.png" alt="trabajo">
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 item" data-groups='["Desarrollo Web", "Video"]'>
+            <div 
+                class="wrap"
+                data-image="/assets/images/works/2.png"
+                data-title="VPN Remota Segura con PepVPN & SpeedFusion | Bonding 4G & Starlink"
+                data-description="Para un cliente del broadcasting, diseñé e implementé una solución VPN remota segura utilizando PepVPN y SpeedFusion para establecer una conexión fiable entre una unidad móvil (autocaravana) y su sede física. La configuración combinaba conexiones 4G y Starlink para mejorar la redundancia y optimizar el ancho de banda, garantizando un acceso remoto sin interrupciones. El resultado fue una conexión remota estable y segura, obtenida sin la necesidad de una IPv4 pública estática, con acceso completo a los recursos internos y alta disponibilidad de la red."
+                data-client="Cliente broadcasting"
+                data-completed="Abril 2022"
+                data-skills="Configuración VPN (PepVPN, SpeedFusion), Bonding de red (4G + Starlink), Gestión firewall, Configuración LAN/WAN"
+            >
+                <img src="/assets/images/works/2.png" alt="trabajo">
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 item" data-groups='["Video", "SEO"]'>
+            <div 
+                class="wrap"
+                data-image="/assets/images/works/3.png"
+                data-title="Automatización Active Directory"
+                data-description="Desarrollé un script PowerShell que fue fundamental para automatizar la instalación de Active Directory y organizar la infraestructura WSUS para un importante cliente del sector de la moda. Gracias a este script, la distribución de las Group Policy y la planificación de las actualizaciones para clientes y servidores se simplificó, con una reducción del 30% en el uso del ancho de banda."
+                data-client="Cliente de la moda"
+                data-completed="Enero 2022"
+                data-skills="Instalación y Configuración AD, Distribución WSUS, Group Policy personalizadas, Optimización de ancho de banda"
+                data-project-link="https://github.com/eugeniogiusti/Automated-OU-Organizer"
+            >
+                <img src="/assets/images/works/3.png" alt="trabajo">
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 item" data-groups='["Desarrollo Web", "Video"]'>
+            <div 
+                class="wrap"
+                data-image="/assets/images/works/4.png"
+                data-title="Automatización WordPress para Servicios de Cloud Hosting"
+                data-description="Desarrollé un script shell para automatizar la instalación de WordPress en Ubuntu 22.04, con el objetivo de apoyar al equipo de desarrollo reduciendo los tiempos de distribución y minimizando los errores de configuración. El script gestiona toda la configuración de Apache, MariaDB y PHP. Esta herramienta nos permitió mejorar tanto la eficiencia como la estandarización entre entornos de test y producción."
+                data-client="Servicios Cloud Hosting | Agencia Web"
+                data-completed="Febrero 2023"
+                data-skills="Scripting Bash, stack LAMP, administración servidor Linux, Deploy Automatizado"
+                data-project-link="https://github.com/eugeniogiusti/wordpress-ubuntu-install"
+            >
+                <img src="/assets/images/works/4.png" alt="trabajo">
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 item" data-groups='["Desarrollo Web", "SEO"]'>
+            <div 
+                class="wrap"
+                data-image="/assets/images/works/praticaflow.png"
+                data-title="PraticaFlow - Sistema de Gestión para CAF y Agencias de Trámites"
+                data-description="Desarrollé PraticaFlow, el primer software de gestión específico para CAF y agencias de trámites para extranjeros. Incluye WhatsApp integrado para comunicaciones automáticas, Google Calendar sincronizado para tareas y vencimientos, gestión de documentos con archivo automático, y workflows optimizados para 730, ISEE, permisos de residencia y ciudadanía. Sistema completo que elimina el caos documental y automatiza las comunicaciones con los clientes."
+                data-client="CAF y Agencias de Trámites para Extranjeros"
+                data-completed="Abril 2025"
+                data-skills="Desarrollo Web y sistemas cloud"
+                data-project-link="https://praticaflow.it"
+            >
+                <img src="/assets/images/works/praticaflow.png" alt="PraticaFlow gestión">
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 item" data-groups='["Desarrollo Web", "Video"]'>
+            <div 
+                class="wrap"
+                data-image="/assets/images/works/5.png"
+                data-title="Deploy Automatizado de MediaWiki en Ubuntu"
+                data-description="Creé un script Bash para automatizar la distribución de MediaWiki en Ubuntu 22.04 (Apache, MariaDB, PHP). Implementé esta solución en mi empresa anterior para reemplazar SharePoint con una plataforma de código abierto y personalizable. El proyecto mejoró el intercambio de conocimiento entre los diversos equipos, optimizando los tiempos de búsqueda de información"
+                data-client="Empresa de consultoría"
+                data-completed="Julio 2023"
+                data-skills="Scripting Bash, stack LAMP, administración Linux, MediaWiki, automatización, soluciones open-source"
+                data-project-link="https://github.com/eugeniogiusti/automated-mediawiki-deploy"
+            >
+                <img src="/assets/images/works/5.png" alt="trabajo">
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 item" data-groups='["Desarrollo Web", "Video"]'>
+            <div 
+                class="wrap"
+                data-image="/assets/images/works/praticaflow-docs.png"
+                data-title="Documentación Técnica PraticaFlow"
+                data-description="Creé un sistema de documentación completo para PraticaFlow utilizando tecnologías modernas. Incluye guías de usuario interactivas, tutoriales en vídeo integrados y sistema de búsqueda avanzada. La documentación cubre setup, configuraciones, integraciones (WhatsApp, Google Calendar) y resolución de problemas. Diseñada para ser accesible tanto para usuarios técnicos como no técnicos."
+                data-client="Documentación producto PraticaFlow"
+                data-completed="Abril 2025"
+                data-skills="Documentación técnica, Sistemas de ayuda, UX writing, Tutoriales en vídeo, Búsqueda avanzada"
+                data-project-link="https://wiki.praticaflow.it"
+            >
+                <img src="/assets/images/works/praticaflow-docs.png" alt="Documentación PraticaFlow">
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 item" data-groups='["Desarrollo Web", "Video"]'>
+            <div 
+                class="wrap"
+                data-image="/assets/images/works/6.png"
+                data-title="Wireless Mesh, Distribución de Red"
+                data-description="Diseñada y distribuida una red wireless mesh para una escuela en el área de Monza, donde el cableado no estaba permitido. Se utilizaron puntos de acceso Peplink en modalidad mesh para garantizar cobertura completa sin cableado. Se instaló un balanceador de carga Peplink para habilitar el futuro bonding WAN y funcionar como controlador AP, y en cascada al Peplink se configuró un firewall pfSense que funcionaba como filtrado de contenidos. El resultado fue una red escalable, segura y completamente interconectada sin uso de cableado físico, que permitió una gestión centralizada y una amplia cobertura de todo el instituto."
+                data-client="Escuela cerca de Monza"
+                data-completed="Mayo 2023"
+                data-skills="AP Peplink & Balance, pfSense, wireless mesh, Proxy, firewalling."
+            >
+                <img src="/assets/images/works/6.png" alt="trabajo">
+            </div>
+        </div>
+    </div>
+</div>
+        </section>
+        <section id="blog">
+            <div class="text-center">
+                <header class="has-bg">
+                    <img src="/assets/images/h1-bg.png" alt="h1 bg">
+                    <img src="/assets/images/h1-bg-light.png" alt="h1 bg">
+                    <h1>Blog</h1>
+                </header>
+            </div>
+            <div class="container">
+                <div class="row" id="blog-articles">
+                </div>
+            </div>
+        </section>
+        <section id="testimonial">
+            <div class="text-center">
+                <header class="has-bg">
+                    <img src="/assets/images/h1-bg.png" alt="h1 bg">
+                    <img src="/assets/images/h1-bg-light.png" alt="h1 bg">
+                    <h1>Testimonios</h1>
+                </header>
+            </div>
+            <section class="main-section">
+                <div class="images">
+                    <img src="/assets/images/testimonials/1.png" alt="testimonio">
+                    <img src="/assets/images/testimonials/2.png" alt="testimonio">
+                    <img src="/assets/images/testimonials/3.png" alt="testimonio" class="active">
+                    <img src="/assets/images/testimonials/4.png" alt="testimonio">
+                    <img src="/assets/images/testimonials/5.png" alt="testimonio">
+                </div>
+                <div class="comments">
+                    <div class="item">
+                        <div class="box">
+                            <p>
+                                <span>&lsquo;&lsquo;</span>
+                                He tenido inmenso placer y gratitud al trabajar con Eugenio. Es un excelente administrador de sistemas y redes con experiencia comprobada en el campo a mi lado en @Knowit SRL. Es un profesional serio y capaz, capaz de trabajar tanto de forma autónoma como en equipo, obteniendo resultados excelentes en todos los ámbitos. Tiene un conocimiento profundo de la administración de redes y sistemas, así como de entornos mixtos, tanto para medianas empresas como para grandes compañías. Lo recomiendo encarecidamente a cualquiera que lea este comentario, es un profesional cualificado con gran experiencia.
+                                <span>&rsquo;&rsquo;</span>
+                            </p>
+                        </div>
+                        <div class="writer">
+                            <span class="name">Ndamukunda Jean paul</span>
+                            <span class="field">Senior Network Engineer en Aubay Luxemburgo</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="box">
+                            <p>
+                                <span>&lsquo;&lsquo;</span>
+                                He tenido el placer de colaborar con Eugenio durante la migración de un sistema software de gestión. En particular, Eugenio se ocupó de las actividades de administración de sistemas, gestionando la migración de la base de datos al nuevo servidor y la instalación de la aplicación, ejecutando todas las pruebas operativas necesarias para garantizar su correcto funcionamiento. Gracias a su profesionalidad y atención a los detalles, la migración se completó sin ningún tiempo de inactividad, garantizando la continuidad operativa del sistema. Nuestra colaboración fue excelente y puedo confirmar que Eugenio es un profesional confiable, autónomo y altamente cualificado en su rol. Lo recomiendo encarecidamente para cualquier proyecto que requiera competencias avanzadas de administración de sistemas y una gestión eficaz de las infraestructuras IT.
+                                <span>&rsquo;&rsquo;</span>
+                            </p>
+                        </div>
+                        <div class="writer">
+                            <span class="name">Daniele Cerriti</span>
+                            <span class="field">Desarrollador de Software Java</span>
+                        </div>
+                    </div>
+                    <div class="item active">
+                        <div class="box">
+                            <p>
+                                <span>&lsquo;&lsquo;</span>
+                                He tenido la oportunidad de colaborar y discutir con Eugenio sobre diversos aspectos de la gestión de sistemas Linux y la automatización IT. 
+                                Durante nuestras discusiones técnicas y sesiones de pruebas en lab, ha demostrado una sólida competencia en el deployment, configuración y gestión de entornos Linux. 
+                                Su enfoque es siempre práctico y orientado a la solución, con excelentes capacidades de resolución de problemas y optimización de procesos. 
+                                Eugenio es un profesional confiable, siempre disponible para compartir soluciones y mejores prácticas en el campo IT.
+                                <span>&rsquo;&rsquo;</span>
+                            </p>
+                        </div>
+                        <div class="writer">
+                            <span class="name">Alessio Sidoti</span>
+                            <span class="field">System Engineer en Aldermonde Bank Londres</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="box">
+                            <p>
+                                <span>&lsquo;&lsquo;</span>
+                                He tenido el placer de colaborar con Eugenio en varios proyectos relacionados con el desarrollo web y la gestión de la infraestructura. El trabajo en equipo siempre ha sido fluido y eficaz.
+                                Nos hemos ocupado juntos de la implementación de soluciones personalizadas, desde la configuración de servidores hasta la publicación online de sitios web. 
+                                Eugenio es una persona confiable, precisa y capaz de afrontar los desafíos con un enfoque práctico y eficaz.
+                                <span>&rsquo;&rsquo;</span>
+                            </p>
+                        </div>
+                        <div class="writer">
+                            <span class="name">Amir Sobih</span>
+                            <span class="field">Linux ITC & Desarrollador WEB</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="box">
+                            <p>
+                                <span>&lsquo;&lsquo;</span>
+                                Soy un estadounidense que vive en Roma y ayudo a mis compatriotas con permisos de residencia, visas y trámites de ciudadanía italiana. Antes de PraticaFlow era una pesadilla total: documentos dispersos por todas partes, fechas límite perdidas, estrés continuo. Gestionar cientos de clientes con el sistema tradicional era imposible. Este software literalmente me cambió la vida profesional. Las actualizaciones automáticas en WhatsApp mantienen siempre informados a los clientes, la integración con Google Calendar me garantiza no perder nunca una fecha límite, y el sistema de gestión de documentos finalmente puso orden en el caos total que tenía antes. Mis clientes están más satisfechos, mi estrés ha disminuido drásticamente, y logro gestionar el doble de trámites. PraticaFlow no es solo un software, es un punto de inflexión para cualquiera que trabaje profesionalmente con la burocracia italiana.
+                                <span>&rsquo;&rsquo;</span>
+                            </p>
+                        </div>
+                        <div class="writer">
+                            <span class="name">James Carter</span>
+                            <span class="field">Consultor para Expat Estadounidenses en Italia</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+   <section id="contact_me" class="py-5">
+  <div class="text-center mb-4">
+    <header class="has-bg">
+      <img src="/assets/images/h1-bg.png" alt="h1 bg">
+      <img src="/assets/images/h1-bg-light.png" alt="h1 bg">
+      <h1>¡Hablemos!</h1>
+    </header>
+    <p class="mt-3">
+      Hablemos de tu proyecto, de una colaboración o de una asociación estratégica.<br>
+    </p>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="card p-4 shadow-lg rounded-4 bg-dark text-light text-center">
+          <h3 class="mb-3">¡Contáctame!</h3>
+          <p class="mb-4">Haz clic aquí abajo para escribirme por email:</p>
+
+          <!-- Botón email -->
+          <a class="js-mailto btn btn-info text-white fw-bold"
+             data-u="info"
+             data-d="eugeniogiustitechsolutions.com"
+             data-subject="Solicitud de información"
+             data-body="Hola, me gustaría hablarte de un proyecto.">
+             Escríbeme por email
+          </a>
+
+          <!-- Fallback para quien tiene JS desactivado -->
+          <noscript>
+            <p class="mt-3">Email: info [arroba] eugeniogiustitechsolutions [punto] com</p>
+          </noscript>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+   <footer class="text-center py-4">
+        <div class="container">
+   <div class="legal-links">
+            <a href="/cookie.html" target="_blank" rel="noopener noreferrer">Información sobre Cookies</a>
+        </div>
+            <div class="piva-info">
+                <p>Eugenio Giusti - P.IVA:03297720603</p>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="workModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="modal-close-button" data-bs-dismiss="modal" aria-label="Cerrar">
+                        <i class="las la-times"></i>
+                    </button>
+                    <img src="" alt="trabajo">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-7 left">
+                                <h2 class="title"></h2>
+                                <p class="description"></p>
+                            </div>
+                            <div class="col-lg-5 right">
+                                <div class="client mb-3">
+                                    <i class="las la-user-alt"></i>
+                                    <span class="title">Cliente:</span>
+                                    <span class="value"></span>
+                                </div>
+                                <div class="completed mb-3">
+                                    <i class="lar la-calendar-check"></i>
+                                    <span class="title">Completado:</span>
+                                    <span class="value"></span>
+                                </div>
+                                <div class="skills">
+                                    <i class="las la-flask"></i>
+                                    <span class="title">Competencias:</span>
+                                    <span class="value"></span>
+                                </div>
+                                <div class="project-link">
+                                    <i class="las la-link"></i>
+                                    <a href="">Enlace del proyecto</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/6.0.0/shuffle.min.js"
+        integrity="sha512-fN+YeX/572qBnWu5Axj90DDyKjSNUfvR+8OaFkz27xnr+QE50vZHefJ+bplRrM284a8cJgMLxEipmKshf8vrug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
