@@ -14,11 +14,16 @@
       // Controlla se preferisce spagnolo
       const prefersSpanish = langs.some(l => l.toLowerCase().startsWith('es'));
       
+      // Controlla se preferisce portoghese
+      const prefersPortuguese = langs.some(l => l.toLowerCase().startsWith('pt'));
+      
       // Reindirizza in base alla lingua preferita
       if (prefersItalian) {
         window.location.replace("/it/");
       } else if (prefersSpanish) {
         window.location.replace("/es/");
+      } else if (prefersPortuguese) {
+        window.location.replace("/pt/");
       } else {
         window.location.replace("/en/");
       }
@@ -29,6 +34,7 @@
   <p>Reindirizzamento in corso in base alla lingua del tuo browser...</p>
   <p>Redirecting based on your browser language...</p>
   <p>Redirigiendo según el idioma de tu navegador...</p>
-  <p>Se non vieni reindirizzato automaticamente: <a href="/it/">Italiano</a> | <a href="/en/">English</a> | <a href="/es/">Español</a></p>
+  <p>Redirecionando com base no idioma do seu navegador...</p>
+  <p>Se non vieni reindirizzato automaticamente: <a href="/it/">Italiano</a> | <a href="/en/">English</a> | <a href="/es/">Español</a> | <a href="/pt/">Português</a></p>
 </body>
 </html>
