@@ -3,135 +3,17 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 >
   <url>
-    <loc>https://eugeniogiustitechsolutions.com/assets/blog/praticaflow.html</loc>
-    <lastmod>2025-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eugeniogiustitechsolutions.com/assets/blog/google-calendar-caf.html</loc>
-    <lastmod>2025-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eugeniogiustitechsolutions.com/assets/blog/gestione-documenti-studi.html</loc>
-    <lastmod>2025-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eugeniogiustitechsolutions.com/assets/blog/automazione-whatsapp-studi.html</loc>
-    <lastmod>2025-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eugeniogiustitechsolutions.com/assets/blog/software-agenzie-stranieri.html</loc>
-    <lastmod>2025-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eugeniogiustitechsolutions.com/assets/blog/digitalizzare-caf-2025.html</loc>
-    <lastmod>2025-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://eugeniogiustitechsolutions.com/assets/blog/analyzer.html</loc>
     <lastmod>2025-04-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
-    <loc>https://eugeniogiustitechsolutions.com/assets/blog/excel-non-basta.html</loc>
-    <lastmod>2025-08-19</lastmod>
+    <loc>https://eugeniogiustitechsolutions.com/assets/blog/indiedesk.html</loc>
+    <lastmod>2026-02-13</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
-  <url>
-    <loc>https://eugeniogiustitechsolutions.com/assets/blog/caos-quotidiano.html</loc>
-    <lastmod>2025-08-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eugeniogiustitechsolutions.com/assets/blog/digitalizzarsi-non-e-piu-un-optional.html</loc>
-    <lastmod>2025-08-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eugeniogiustitechsolutions.com/assets/blog/dashboard-praticaflow.html</loc>
-    <lastmod>2025-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eugeniogiustitechsolutions.com/assets/blog/anagrafica-clienti.html</loc>
-    <lastmod>2025-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eugeniogiustitechsolutions.com/assets/blog/riepilogo-cliente.html</loc>
-    <lastmod>2025-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eugeniogiustitechsolutions.com/assets/blog/lista-pratiche.html</loc>
-    <lastmod>2025-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eugeniogiustitechsolutions.com/assets/blog/dettaglio-pratica.html</loc>
-    <lastmod>2025-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eugeniogiustitechsolutions.com/assets/blog/lista-documenti.html</loc>
-    <lastmod>2025-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eugeniogiustitechsolutions.com/assets/blog/lista-pagamenti.html</loc>
-    <lastmod>2025-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eugeniogiustitechsolutions.com/assets/blog/lista-appuntamenti.html</loc>
-    <lastmod>2025-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eugeniogiustitechsolutions.com/assets/blog/lista-task.html</loc>
-    <lastmod>2025-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eugeniogiustitechsolutions.com/assets/blog/calendario.html</loc>
-    <lastmod>2025-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eugeniogiustitechsolutions.com/assets/blog/perche-scegliere-praticaflow.html</loc>
-    <lastmod>2025-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://eugeniogiustitechsolutions.com/assets/blog/praticaflow-in-pratica.html</loc>
-    <lastmod>2025-08-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+
 </urlset>

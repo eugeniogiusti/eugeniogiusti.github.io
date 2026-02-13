@@ -1,10 +1,16 @@
 [
-
+  {
+    "title": "IndieDesk – Why I Built a Self-Hosted Laravel Project Workspace",
+    "date": "2026-02-13",
+    "description": "Why I built IndieDesk, a self-hosted Laravel project workspace template designed for indie developers who want full control over their projects, costs and billing without SaaS lock-in.",
+    "link": "/assets/blog/indiedesk.html",
+    "image": "/assets/images/blog/indiedesk-cover.png"
+  },
   {
     "title": "Network Analyzer Project",
     "date": "2025-03-25",
     "description": "A complete video tutorial and setup on how I built a custom network analyzer using tcpdump and other open-source tools on Linux. This article explains the logic, shows real output and practical use cases.",
-    "link": "/assets/blog/analyzer.html", 
+    "link": "/assets/blog/analyzer.html",
     "image": "/assets/images/blog/analyzer.jpg"
   }
 ]

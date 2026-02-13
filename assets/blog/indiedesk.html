@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="canonical" href="https://eugeniogiustitechsolutions.com/assets/blog/indiedesk.html" />
+
+  <title>IndieDesk – Why I Built a Self-Hosted Laravel Project Workspace</title>
+
+  <meta name="description" content="Why I built IndieDesk, a self-hosted Laravel project workspace template designed for indie developers who want full control over their projects, costs and billing without SaaS lock-in.">
+
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="IndieDesk – Why I Built a Self-Hosted Laravel Project Workspace">
+  <meta property="og:description" content="A personal story behind IndieDesk: building a self-hosted Laravel template to manage real client projects without SaaS lock-in.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://eugeniogiustitechsolutions.com/assets/blog/indiedesk.html">
+  <meta property="og:image" content="https://eugeniogiustitechsolutions.com/assets/images/blog/indiedesk-cover.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "IndieDesk – Why I Built a Self-Hosted Laravel Project Workspace",
+    "author": {
+      "@type": "Person",
+      "name": "Eugenio Giusti",
+      "url": "https://eugeniogiustitechsolutions.com"
+    },
+    "datePublished": "2026-02-13",
+    "image": "https://eugeniogiustitechsolutions.com/assets/images/blog/indiedesk-cover.jpg",
+    "description": "The story and technical philosophy behind IndieDesk, a self-hosted Laravel template built to manage real-world freelance projects."
+  }
+  </script>
+
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+
+<div class="text-center mb-4 d-flex justify-content-center gap-3 flex-wrap">
+  <a href="https://eugeniogiustitechsolutions.com" class="btn btn-outline-light">
+    Home
+  </a>
+</div>
+
+<main>
+<section class="container py-5 text-light"></section>
+
+<header class="text-center mb-5">
+  <h2>IndieDesk – Why I Built It</h2>
+</header>
+
+<div class="row align-items-center mb-5">
+  <div class="col-lg-6">
+    <img src="../images/blog/indiedesk-cover.png"
+         alt="IndieDesk Laravel dashboard overview"
+         class="img-fluid rounded shadow" />
+  </div>
+  <div class="col-lg-6 mt-4 mt-lg-0">
+    <p>
+      After years of building software for other people, managing client projects, handling invoices, tracking payments and juggling multiple tools, I realized something simple:
+    </p>
+    <p><strong>I did not have a workspace that truly fit the way I work.</strong></p>
+  </div>
+</div>
+
+<div class="mb-5">
+  <h3>There Was Always Something Missing</h3>
+  <p>
+    I tried using different tools.
+    Task managers.
+    Note apps.
+    Billing platforms.
+    Spreadsheets.
+  </p>
+  <p>
+    But everything was fragmented.
+    Tasks in one place.
+    Costs in another.
+    Payments somewhere else.
+    Invoice drafts disconnected from actual project data.
+  </p>
+  <p>
+    As a developer, that friction adds up.
+    Context switching kills clarity.
+  </p>
+</div>
+
+<div class="mb-5">
+  <h3>So I Built What I Needed</h3>
+  <p>
+    Instead of adapting my workflow to a SaaS product,
+    I decided to build a workspace around the way I actually operate.
+  </p>
+  <p>
+    That’s how IndieDesk started.
+  </p>
+  <p>
+    A clean, focused Laravel application where:
+  </p>
+  <ul>
+    <li>Each project is a central container.</li>
+    <li>Tasks live inside the project.</li>
+    <li>Costs are tied directly to that project.</li>
+    <li>Payments are tracked against real work.</li>
+    <li>Invoice drafts are generated from actual project data.</li>
+  </ul>
+</div>
+
+<div class="mb-5">
+  <h3>Why Self-Hosted?</h3>
+  <p>
+    I didn’t want another subscription.
+    I didn’t want vendor lock-in.
+    I didn’t want to depend on someone else’s roadmap.
+  </p>
+  <p>
+    IndieDesk is self-hosted by design.
+  </p>
+  <ul>
+    <li>You deploy it on your own server.</li>
+    <li>You own the code.</li>
+    <li>You can modify everything.</li>
+    <li>You are not forced into predefined billing systems.</li>
+  </ul>
+  <p>
+    It’s a foundation, not a cage.
+  </p>
+</div>
+
+<div class="mb-5">
+  <h3>Built With Real-World Usage in Mind</h3>
+  <p>
+    IndieDesk is not a theoretical side project.
+    It was shaped by actual freelance work.
+  </p>
+  <p>
+    When you manage multiple clients,
+    you need visibility.
+  </p>
+  <p>
+    How much has been paid?
+    What’s still outstanding?
+    Which project is consuming more time?
+    Are costs eating into margins?
+  </p>
+  <p>
+    IndieDesk gives that operational clarity.
+  </p>
+</div>
+
+<div class="mb-5">
+  <h3>The Technical Foundation</h3>
+  <p>
+    The application is built with Laravel 12, using Blade components and a clean relational structure.
+  </p>
+  <p>
+    The architecture is intentionally simple:
+  </p>
+  <ul>
+    <li>Clients</li>
+    <li>Projects</li>
+    <li>Tasks</li>
+    <li>Costs</li>
+    <li>Payments</li>
+    <li>Invoice Drafts</li>
+  </ul>
+  <p>
+    No over-engineering.
+    Just structured entities that reflect real work.
+  </p>
+</div>
+
+<div class="mb-5">
+  <h3>From Personal Tool to Public Template</h3>
+  <p>
+    At some point, I realized this wasn’t just useful for me.
+  </p>
+  <p>
+    Many developers face the same operational chaos.
+    Especially indie hackers and freelancers who want control without complexity.
+  </p>
+  <p>
+    So I decided to release IndieDesk as a template.
+  </p>
+  <p>
+    Not as a bloated SaaS.
+    Not as a locked ecosystem.
+    But as a starting point anyone can modify and extend.
+  </p>
+</div>
+
+<div class="mb-5">
+  <h3>Who It’s For</h3>
+  <ul>
+    <li>Developers managing client projects.</li>
+    <li>Freelancers who want cost and payment clarity.</li>
+    <li>Indie hackers building their own internal tools.</li>
+    <li>Anyone who prefers owning their stack.</li>
+  </ul>
+</div>
+
+<div class="mb-5">
+  <h3>Final Thought</h3>
+  <p>
+    IndieDesk is not about hype.
+    It’s about control.
+  </p>
+  <p>
+    It’s about building your own operational backbone instead of renting one.
+  </p>
+  <p>
+    I built it because I needed it.
+    I released it because others might need it too.
+  </p>
+</div>
+
+<div class="d-flex flex-wrap gap-3 justify-content-center mt-5">
+  <a href="https://eugeniogiusti.gumroad.com/l/indiedesk"
+     target="_blank"
+     class="btn btn-primary">
+    Get IndieDesk
+  </a>
+
+  <a href="https://indiedesk.link/"
+     target="_blank"
+     class="btn btn-dark">
+    Website
+  </a>
+</div>
+
+</section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
