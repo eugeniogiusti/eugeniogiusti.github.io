@@ -1576,3 +1576,82 @@ html[theme=light] #contact_me .container .info .item .text a {
     font-weight: 700;
     margin-bottom: 1rem;
 }
+
+#software_development .software-dev-features ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+#software_development .software-dev-features li {
+  position: relative;
+  padding-left: 18px;
+}
+#software_development .software-dev-features li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #658DF2;
+}
+#software_development .software-dev-pricing .software-dev-price {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+#software_development .software-dev-pricing .software-dev-label {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: #fff;
+}
+#software_development .software-dev-pricing .software-dev-includes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+#software_development .software-dev-pricing .software-dev-includes li {
+  position: relative;
+  padding-left: 16px;
+  color: #B6B7BA;
+}
+#software_development .software-dev-pricing .software-dev-includes li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(101, 141, 242, 0.95);
+}
+#software_development .software-dev-popular {
+  border: 1px solid rgba(101, 141, 242, 0.65);
+}
+#software_development .software-dev-badge {
+  display: inline-block;
+  width: fit-content;
+  margin-bottom: 10px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  background: #658DF2;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  #software_development .software-dev-pricing .software-dev-price {
+    font-size: 32px;
+  }
+}

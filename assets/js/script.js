@@ -214,7 +214,35 @@ window.addEventListener('DOMContentLoaded', () => {
       if (navLink) navLink.classList.add('active');
       if (targetSection) targetSection.classList.add('active');
     }
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  const pricingConfig = window.softwareDevelopmentPricing || {};
+  const priceNodes = document.querySelectorAll('[data-software-dev-price]');
+  const checkoutNodes = document.querySelectorAll('[data-software-dev-checkout]');
+
+  priceNodes.forEach((node) => {
+    const key = node.getAttribute('data-software-dev-price');
+    const plan = pricingConfig[key];
+
+    if (plan && typeof plan.price === 'number') {
+      node.textContent = `€${plan.price.toLocaleString('en-US')}`;
+    }
   });
+
+  checkoutNodes.forEach((node) => {
+    const key = node.getAttribute('data-software-dev-checkout');
+    const plan = pricingConfig[key];
+
+    if (plan && typeof plan.stripeLink === 'string' && plan.stripeLink.startsWith('https://')) {
+      node.setAttribute('href', plan.stripeLink);
+      node.setAttribute('target', '_blank');
+      node.setAttribute('rel', 'noopener noreferrer');
+    } else {
+      node.setAttribute('href', '#contact_me');
+    }
+  });
+});
 
   // === Mailto offuscato (per i bottoni con .js-mailto) ===
 document.addEventListener("DOMContentLoaded", () => {
