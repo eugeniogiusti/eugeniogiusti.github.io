@@ -370,6 +370,34 @@ main > section header.custom h2 {
   overflow: hidden;
   z-index: -1;
 }
+
+#home #particles-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+#skill-sphere-wrap {
+  width: 100%;
+  height: 420px;
+  position: relative;
+}
+
+#skill-sphere {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  #skill-sphere-wrap {
+    height: 300px;
+  }
+}
 #home .meteor-shower .meteor:nth-child(1) {
   position: absolute;
   background-image: url("../images/meteor.png");
