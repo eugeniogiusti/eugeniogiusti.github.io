@@ -1,5 +1,12 @@
 [
   {
+    "title": "Why Spreadsheets Break When You Manage Multiple Client Projects",
+    "date": "2026-03-10",
+    "description": "Once you're juggling 3+ client projects, spreadsheets stop working. Here's the visibility problem freelance developers face — and how a project-first workspace like IndieDesk fixes it.",
+    "link": "/assets/blog/spreadsheets-multiple-projects.html",
+    "image": "/assets/images/blog/githubproject.png"
+  },
+  {
     "title": "IndieDesk – Why I Built a Self-Hosted Laravel Project Workspace",
     "date": "2026-02-13",
     "description": "Why I built IndieDesk, a self-hosted Laravel project workspace template designed for indie developers who want full control over their projects, costs and billing without SaaS lock-in.",
