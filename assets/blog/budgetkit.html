@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://eugeniogiustitechsolutions.com/assets/blog/budgetkit.html" />
+
+  <!-- Title & Description -->
+  <title>Why I Built My Own Budgeting App Instead of Using YNAB or Notion | BudgetKit</title>
+  <meta name="description" content="YNAB costs too much. Notion is too flexible. So I built BudgetKit — a self-hosted, open source personal finance app with Laravel and Tailwind CSS. Here's why.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="BudgetKit, open source budgeting app, self-hosted personal finance, YNAB alternative, Laravel finance app, 50 30 20 rule, budget planner, personal finance developer">
+
+  <!-- Open Graph for social media sharing -->
+  <meta property="og:title" content="Why I Built My Own Budgeting App Instead of Using YNAB or Notion">
+  <meta property="og:description" content="YNAB costs too much. Notion is too flexible. So I built BudgetKit — a self-hosted, open source personal finance app. No subscription, no tracking, just your data.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://eugeniogiustitechsolutions.com/assets/blog/budgetkit.html">
+  <meta property="og:image" content="https://eugeniogiustitechsolutions.com/assets/images/blog/budgetkit.jpg">
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Why I Built My Own Budgeting App Instead of Using YNAB or Notion">
+  <meta name="twitter:description" content="Self-hosted, open source personal finance with Laravel. No subscription, no data sharing, no complexity. Meet BudgetKit.">
+  <meta name="twitter:image" content="https://eugeniogiustitechsolutions.com/assets/images/blog/budgetkit.jpg">
+
+  <!-- Structured data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Why I Built My Own Budgeting App Instead of Using YNAB or Notion",
+    "author": {
+      "@type": "Person",
+      "name": "Eugenio Giusti",
+      "url": "https://eugeniogiustitechsolutions.com"
+    },
+    "datePublished": "2026-04-04",
+    "image": "https://eugeniogiustitechsolutions.com/assets/images/blog/budgetkit.jpg",
+    "description": "A developer's honest take on why existing budgeting tools fall short, and how BudgetKit — a self-hosted open source app built with Laravel and Tailwind CSS — fills the gap.",
+    "url": "https://eugeniogiustitechsolutions.com/assets/blog/budgetkit.html",
+    "keywords": "BudgetKit, open source budgeting app, self-hosted personal finance, YNAB alternative, Laravel finance app"
+  }
+  </script>
+
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+
+<!-- Navigation Buttons -->
+<div class="text-center mb-4 d-flex justify-content-center gap-3 flex-wrap">
+  <a href="https://eugeniogiustitechsolutions.com" class="btn btn-outline-light">
+    <i class="las la-home"></i> Home
+  </a>
+</div>
+
+<main>
+  <!-- Blog Article Section -->
+  <section id="blog-article" class="active container py-5">
+
+    <!-- Title -->
+    <header class="custom text-center mb-5">
+      <h1>Why I Built My Own Budgeting App Instead of Using YNAB or Notion</h1>
+      <p class="text-muted mt-2">April 2026 · Eugenio Giusti</p>
+    </header>
+
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6">
+        <img
+          src="../images/blog/budgetkit.jpg"
+          alt="BudgetKit personal finance app screenshot"
+          class="img-fluid rounded shadow"
+        />
+      </div>
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <p>
+          I've tried most of the popular budgeting tools. YNAB is well-designed, but $100/year
+          for a spreadsheet-like app felt hard to justify. Notion is powerful, but I'd spend more
+          time building the template than actually budgeting. And the free-tier apps? They either
+          want to connect to your bank account or show you ads. None of that sat right with me.
+        </p>
+        <p>
+          So I built <strong>BudgetKit</strong> — a self-hosted, open source personal finance app
+          that does exactly what I need and nothing more. No subscription. No data sharing.
+          No third-party tracking your spending habits.
+        </p>
+      </div>
+    </div>
+
+    <!-- The Problem -->
+    <div class="mb-5">
+      <h2>The Problem With Existing Tools</h2>
+      <p>
+        Most personal finance apps fall into one of three categories: too expensive, too
+        complicated, or too nosy.
+      </p>
+      <ul>
+        <li>
+          <strong>YNAB</strong> is great if you commit to their methodology, but it's pricey for
+          what it is, and it runs entirely on their servers. Your financial data lives in someone
+          else's database.
+        </li>
+        <li>
+          <strong>Notion</strong> is infinitely flexible, which is actually the problem. You
+          spend a weekend building the "perfect" finance tracker, then abandon it by month two
+          because maintaining the template is a side project in itself.
+        </li>
+        <li>
+          <strong>Free apps</strong> like Mint (now defunct) or similar tools tend to monetize
+          by selling aggregated financial data or pushing financial products at you. The product
+          is your data.
+        </li>
+      </ul>
+      <p>
+        I wanted something in between — structured enough to actually use, simple enough to not
+        need a tutorial, and private enough that I'm not worried about who's reading my grocery
+        receipts.
+      </p>
+    </div>
+
+    <!-- What BudgetKit Does Differently -->
+    <div class="mb-5">
+      <h2>What BudgetKit Does Differently</h2>
+      <p>
+        BudgetKit is built with <strong>Laravel</strong> and <strong>Tailwind CSS</strong>.
+        It's designed to be self-hosted — you can run it on a VPS, a Raspberry Pi, or even
+        locally. Your data stays where you put it.
+      </p>
+      <p>
+        The codebase is fully open source on GitHub, so you can read every line, fork it,
+        contribute to it, or just audit it for yourself. There's no hidden API call to
+        a third-party analytics service. No telemetry. Nothing phoning home.
+      </p>
+      <p>
+        The design philosophy is simple by default. I didn't try to build Quicken. I built the
+        tool I actually needed: a monthly budget planner with transaction tracking, a savings
+        goal tracker, and a guide to apply the <strong>50/30/20 rule</strong> to your income.
+        That's it.
+      </p>
+    </div>
+
+    <!-- Core Features -->
+    <div class="mb-5">
+      <h2>Core Features</h2>
+      <ul>
+        <li>
+          <strong>Monthly Budget Planner:</strong> Set your income and planned expenses for the
+          month. See at a glance where your money is going and whether you're on track.
+        </li>
+        <li>
+          <strong>50/30/20 Rule Guide:</strong> BudgetKit helps you split your income into
+          needs (50%), wants (30%), and savings (20%). It's a simple framework that works for
+          most people without requiring a finance degree.
+        </li>
+        <li>
+          <strong>Transaction Tracking:</strong> Log what you spend, tag it by category, and
+          watch the numbers add up — or not. No bank sync required; you enter transactions
+          manually, which honestly makes you more aware of spending.
+        </li>
+        <li>
+          <strong>Savings Goals:</strong> Create goals — emergency fund, holiday, new laptop —
+          and track progress over time. Simple percentages, no projections or gamification.
+        </li>
+        <li>
+          <strong>Multi-language Support:</strong> The app ships with support for multiple
+          languages, so it's usable without needing to patch strings yourself.
+        </li>
+      </ul>
+    </div>
+
+    <!-- Who It's For -->
+    <div class="mb-5">
+      <h2>Who This Is For</h2>
+      <p>
+        BudgetKit isn't trying to replace every finance tool for every person. It's for people
+        who want a clean, private, no-subscription way to keep track of their money.
+      </p>
+      <p>
+        If you're a developer comfortable with self-hosting a Laravel app, you can be up and
+        running in under 10 minutes. If you're not a developer, the hosted demo at
+        <a href="https://budgetkit-topaz.vercel.app/" target="_blank" rel="noopener">budgetkit-topaz.vercel.app</a>
+        lets you try it without installing anything.
+      </p>
+      <p>
+        It's also for people who've grown tired of the privacy tradeoffs that come with
+        "free" financial software. There's something to be said for owning your data — not
+        just in principle, but in practice.
+      </p>
+    </div>
+
+    <!-- Closing Thoughts -->
+    <div class="mb-5">
+      <h2>Final Thoughts</h2>
+      <p>
+        I'm not saying YNAB is bad or that Notion doesn't work for budgeting. For some people,
+        they're the right tools. But building BudgetKit taught me that sometimes the right
+        solution is a focused one: a tool that does a few things well and gets out of your way.
+      </p>
+      <p>
+        If you've been meaning to get your finances in order but keep putting it off because
+        every tool feels like too much overhead — give BudgetKit a try. It's free, it's open,
+        and your data belongs to you.
+      </p>
+    </div>
+
+    <!-- CTA Buttons -->
+    <div class="d-flex flex-wrap gap-3 justify-content-center mt-5">
+      <a
+        href="https://budgetkit-topaz.vercel.app/"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-custom-blue"
+      >
+        <i class="las la-external-link-alt"></i> Try BudgetKit
+      </a>
+      <a
+        href="https://github.com/eugeniogiusti/budgeting-app"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-custom-dark"
+      >
+        <i class="lab la-github"></i> View on GitHub
+      </a>
+    </div>
+
+  </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../../assets/js/script.js"></script>
+</body>
+
+</html>
