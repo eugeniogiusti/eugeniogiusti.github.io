@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://eugeniogiustitechsolutions.com/assets/blog/spotly.html" />
+
+  <!-- Title & Description -->
+  <title>Spotly – A Map App for Slow Travelers Built on OpenStreetMap | Eugenio Giusti</title>
+  <meta name="description" content="I built Spotly because I was tired of opening Google Maps in a new city and seeing nothing but sponsored results. A free, open source map app powered by OpenStreetMap — no ads, no algorithm.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="Spotly, open source map app, slow travel, OpenStreetMap, Laravel Vue Leaflet, digital nomad, coworking finder, local spots, travel app">
+
+  <!-- Open Graph for social media sharing -->
+  <meta property="og:title" content="Spotly – A Map App for Slow Travelers Built on OpenStreetMap">
+  <meta property="og:description" content="I built Spotly because I was tired of tourist traps and sponsored pins. A free, open source map app powered by real OpenStreetMap data — for people who want to find where locals actually go.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://eugeniogiustitechsolutions.com/assets/blog/spotly.html">
+  <meta property="og:image" content="https://eugeniogiustitechsolutions.com/assets/images/works/spotly.png">
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Spotly – A Map App for Slow Travelers Built on OpenStreetMap">
+  <meta name="twitter:description" content="No ads, no sponsored pins. Just real OpenStreetMap data and community tags to find where locals eat, work, and hang out.">
+  <meta name="twitter:image" content="https://eugeniogiustitechsolutions.com/assets/images/works/spotly.png">
+
+  <!-- Structured data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Spotly – A Map App for Slow Travelers Built on OpenStreetMap",
+    "author": {
+      "@type": "Person",
+      "name": "Eugenio Giusti",
+      "url": "https://eugeniogiustitechsolutions.com"
+    },
+    "datePublished": "2026-04-05",
+    "image": "https://eugeniogiustitechsolutions.com/assets/images/works/spotly.png",
+    "description": "Why I built Spotly — an open source map app for slow travelers powered by OpenStreetMap, with no ads, no sponsored results, and community-driven tags for finding local spots.",
+    "url": "https://eugeniogiustitechsolutions.com/assets/blog/spotly.html",
+    "keywords": "Spotly, open source map app, slow travel, OpenStreetMap, Laravel, Vue 3, Leaflet.js"
+  }
+  </script>
+
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+
+<!-- Navigation Buttons -->
+<div class="text-center mb-4 d-flex justify-content-center gap-3 flex-wrap">
+  <a href="https://eugeniogiustitechsolutions.com" class="btn btn-outline-light">
+    <i class="las la-home"></i> Home
+  </a>
+</div>
+
+<main>
+  <!-- Blog Article Section -->
+  <section id="blog-article" class="active container py-5">
+
+    <!-- Title -->
+    <header class="custom text-center mb-5">
+      <h1>I Built a Map App Because Google Maps Stopped Showing Me the City</h1>
+      <p class="text-muted mt-2">April 2026 · Eugenio Giusti</p>
+    </header>
+
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6">
+        <img
+          src="../images/works/spotly.png"
+          alt="Spotly map app screenshot"
+          class="img-fluid rounded shadow"
+        />
+      </div>
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <p>
+          You arrive in a new city. You open Google Maps, search for "coffee" or "lunch", and the
+          first page is basically a list of places that paid to be there. Sponsored. Promoted.
+          Rated by people who visited once, took a photo, and left. Tourist traps with four stars
+          because tourists don't know any better yet.
+        </p>
+        <p>
+          What you actually want is to find where the neighborhood regulars go. The café where
+          locals work on laptops in the morning. The lunch spot that doesn't have a sign in English
+          out front. The park that isn't on a postcard. That information exists — it's just buried
+          under an algorithm that has no interest in giving it to you for free.
+        </p>
+        <p>
+          That frustration is where <strong>Spotly</strong> came from.
+        </p>
+      </div>
+    </div>
+
+    <!-- The Idea -->
+    <div class="mb-5">
+      <h2>What Spotly Is</h2>
+      <p>
+        Spotly is an open source map app built for slow travelers — people who spend weeks or months
+        in a place rather than ticking sights off a list. It's designed to help you find where
+        locals actually eat, work, and spend time, without ads, without sponsored results, and
+        without handing your location history to a corporation in exchange.
+      </p>
+      <p>
+        The underlying data comes entirely from <strong>OpenStreetMap</strong>, which is
+        free, community-maintained, and covers the world with surprisingly good detail. Spotly
+        queries that data in real time through the Overpass API, so what you see on the map
+        reflects what the OSM community has actually mapped — not what a business paid to promote.
+      </p>
+      <p>
+        I built it because I needed it. I've spent time working remotely from different cities,
+        and every time I land somewhere new the first hour is spent trying to figure out basic
+        things: where can I find a decent coffee? Is there a coworking space nearby? Where are
+        the parks? Google Maps works, technically, but it's optimized for tourism and commerce,
+        not for the kind of low-friction, daily-use exploration that slow travel actually requires.
+      </p>
+    </div>
+
+    <!-- How It Works -->
+    <div class="mb-5">
+      <h2>How It Works</h2>
+      <p>
+        The app is centered around a map with toggleable category layers. You can turn on Food,
+        Coffee, Coworking, Transit, Parks, or a handful of other categories depending on what
+        you're looking for. Each layer pulls POIs from OpenStreetMap relevant to that category,
+        drops pins on the map, and lets you explore without committing to a search query.
+        Sometimes you don't know what you're looking for until you see it on a map.
+      </p>
+      <p>
+        Clicking a pin opens a POI card with the information OSM has available: name, opening
+        hours if mapped, address, and a direct link to open directions in your preferred navigation
+        app. Nothing elaborate — just the data you'd actually want before deciding whether to
+        walk somewhere.
+      </p>
+      <p>
+        You can save places with personal notes. If you find a café that works well for long
+        sessions — good wifi, not too loud, doesn't kick you out after one coffee — you save it
+        with a note so you can find it again tomorrow. It's a small thing, but it's the kind of
+        small thing that makes a city feel less anonymous after a few days.
+      </p>
+      <p>
+        There's also a community tagging layer. Users can add tags to places:
+        <em>laptop_friendly</em>, <em>quiet</em>, <em>budget_friendly</em>, <em>tourist_trap</em>,
+        <em>locals_only</em>. These aren't reviews — they're quick signals that help you calibrate
+        expectations before you walk in. A place tagged <em>tourist_trap</em> isn't necessarily bad,
+        it just tells you what kind of crowd to expect. A place tagged <em>laptop_friendly</em>
+        tells you something that no star rating captures.
+      </p>
+      <p>
+        The UI is multilingual from the start, because slow travel is inherently international.
+        The people who'd actually use an app like this are scattered across a dozen languages.
+      </p>
+    </div>
+
+    <!-- Tech Choices -->
+    <div class="mb-5">
+      <h2>Why These Technologies</h2>
+      <p>
+        The stack is <strong>Laravel 12</strong> on the backend, <strong>Vue 3</strong> on the
+        frontend, connected through <strong>Inertia.js</strong>, with <strong>Leaflet.js</strong>
+        handling the map rendering and <strong>OpenStreetMap</strong> tiles.
+      </p>
+      <p>
+        The decision not to use the Google Maps API was deliberate. Google Maps is excellent
+        software, but it's also a product with pricing that can spike unexpectedly once you scale,
+        and terms of service that constrain what you can do with the data. For an open source
+        project meant to be self-hostable and free to use, that's not a foundation worth building on.
+      </p>
+      <p>
+        OpenStreetMap is the opposite: free to use, community-driven, and genuinely good coverage
+        in most of the world. The data quality varies by region, but for the cities where slow
+        travelers tend to go — Europe, Southeast Asia, Latin America — it's often comparable to
+        or better than proprietary alternatives. And because it's maintained by contributors who
+        actually live in those places, it sometimes has detail that commercial maps miss entirely.
+      </p>
+      <p>
+        Leaflet.js is lightweight and well-suited to the kind of map interactions Spotly needs.
+        Vue 3 with Inertia keeps the frontend reactive without the overhead of a fully decoupled
+        SPA architecture. Laravel handles the API, authentication, and saved-places logic. It's
+        a stack I know well and can move quickly in, which matters more for a project like this
+        than chasing something new.
+      </p>
+    </div>
+
+    <!-- What's Next -->
+    <div class="mb-5">
+      <h2>What's Next</h2>
+      <p>
+        Spotly is under active development. The core features are working — the map, layers, POI
+        cards, saved places, and community tags are all functional — but there's still a lot I
+        want to build. Better offline support, more tag categories, a way to share a curated list
+        of spots with someone else, deeper integration with OSM contributor tools. Some of that
+        is planned; some of it will come from people using the app and telling me what's missing.
+      </p>
+      <p>
+        The project is fully open source and I genuinely welcome contributions. Whether that's
+        code, new tag suggestions, translations, or just opening an issue to say something's broken
+        — all of it helps. A map app built for travelers works better when it's shaped by people
+        who actually travel.
+      </p>
+    </div>
+
+    <!-- Closing -->
+    <div class="mb-5">
+      <p>
+        If you spend time in cities you don't know well, or if you're building something adjacent
+        and want to talk about the stack, or if you just want to tell me the feature you'd add
+        first — I'd like to hear from you. The GitHub repo is the best place to start. There's
+        also a demo video if you want to see it in action before reading any code.
+      </p>
+    </div>
+
+    <!-- CTA Buttons -->
+    <div class="d-flex flex-wrap gap-3 justify-content-center mt-5">
+      <a
+        href="https://www.youtube.com/watch?v=v2J6zNtTwRs"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-custom-blue"
+      >
+        <i class="lab la-youtube"></i> Watch Demo
+      </a>
+      <a
+        href="https://github.com/eugeniogiusti/spotly"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-custom-dark"
+      >
+        <i class="lab la-github"></i> View on GitHub
+      </a>
+    </div>
+
+  </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../../assets/js/script.js"></script>
+</body>
+
+</html>

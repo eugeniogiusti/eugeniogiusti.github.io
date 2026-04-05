@@ -1,5 +1,12 @@
 [
   {
+    "title": "I Built a Map App Because Google Maps Stopped Showing Me the City",
+    "date": "2026-04-05",
+    "description": "Spotly is an open source map app for slow travelers, powered by OpenStreetMap. No ads, no sponsored results — just real data and community tags to find where locals eat, work, and hang out.",
+    "link": "/assets/blog/spotly.html",
+    "image": "/assets/images/works/spotly.png"
+  },
+  {
     "title": "Why I Built My Own Budgeting App Instead of Using YNAB or Notion",
     "date": "2026-04-04",
     "description": "YNAB costs too much. Notion is too flexible. So I built BudgetKit — a self-hosted, open source personal finance app with Laravel and Tailwind CSS. No subscription, no tracking, just your data.",
