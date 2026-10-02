@@ -331,6 +331,13 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   transition: transform .3s ease;
 }
 .floater:hover .chip { transform: scale(1.1) rotate(-2deg); }
+.floater img {
+  width: clamp(56px, 5vw, 80px);
+  height: clamp(56px, 5vw, 80px);
+  object-fit: contain;
+  transition: transform .3s ease-out;
+}
+.floater:hover img { transform: scale(1.1) rotate(-6deg); }
 .floater .note {
   font-size: 13px;
   color: var(--ink-3);
@@ -767,7 +774,9 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 
   .tinker { min-height: auto; flex-direction: column; padding: 120px 0; }
   .floaters { position: static; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 40px; padding: 0 var(--gutter); }
+  .floaters { gap: 24px 16px; }
   .floater { position: static; }
+  .floater img { width: 44px; height: 44px; }
   .floater .note { display: none; }
 
   .journey { height: auto !important; }
