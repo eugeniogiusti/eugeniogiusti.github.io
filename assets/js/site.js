@@ -132,32 +132,6 @@
   }
   drawCable();
 
-  // === Percorso: timeline orizzontale guidata dallo scroll ===
-  const journey = document.querySelector('.journey');
-  const track = journey.querySelector('.journey-track');
-  let journeyDistance = 0;
-
-  function sizeJourney() {
-    if (window.innerWidth <= 720) {
-      journey.style.height = '';
-      track.style.transform = '';
-      return;
-    }
-    journeyDistance = Math.max(0, track.scrollWidth - window.innerWidth);
-    journey.style.height = `${window.innerHeight + journeyDistance}px`;
-  }
-
-  function moveJourney() {
-    if (window.innerWidth <= 720) return;
-    const rect = journey.getBoundingClientRect();
-    const total = journey.offsetHeight - window.innerHeight;
-    const p = total > 0 ? clamp(-rect.top / total, 0, 1) : 0;
-    track.style.transform = `translate3d(${-journeyDistance * p}px, 0, 0)`;
-    track.style.setProperty('--progress', (0.15 + 0.85 * p).toFixed(3));
-  }
-
-  sizeJourney();
-
   // === Cosa posso offrirti: il cavo collega le illustrazioni ===
   const offer = document.querySelector('.offer-section');
   const offerSvg = offer.querySelector('.offer-line');
@@ -212,7 +186,6 @@
     ticking = true;
     requestAnimationFrame(() => {
       drawCable();
-      moveJourney();
       drawOffer();
       ticking = false;
     });
@@ -226,12 +199,9 @@
     buildCable();
     heroPath.style.transition = 'none';
     drawCable();
-    sizeJourney();
-    moveJourney();
     buildOffer();
     drawOffer();
   });
-  moveJourney();
 
   // === Lavori: modale dettaglio ===
   const modal = document.getElementById('workModal');
@@ -261,12 +231,13 @@
   });
 
   // === Testimonianze: frecce ===
-  const quotes = document.querySelector('.quotes');
-  document.querySelectorAll('.quotes-nav button').forEach((btn) => {
+  // === Frecce per i caroselli (testimonianze, percorso) ===
+  document.querySelectorAll('[data-scroll-target]').forEach((btn) => {
     btn.addEventListener('click', () => {
-      const card = quotes.querySelector('.quote');
-      const step = card ? card.offsetWidth + 24 : 400;
-      quotes.scrollBy({ left: step * Number(btn.dataset.dir), behavior: 'smooth' });
+      const scroller = document.querySelector(btn.dataset.scrollTarget);
+      const item = scroller.firstElementChild;
+      const step = item ? item.offsetWidth + 24 : 400;
+      scroller.scrollBy({ left: step * Number(btn.dataset.dir), behavior: 'smooth' });
     });
   });
 

@@ -275,8 +275,12 @@
         <!-- ============ IL MIO PERCORSO ============ -->
         <section class="journey" aria-label="Il Mio Percorso">
             <div class="journey-pin">
-                <div class="journey-head">
-                    <h2 class="section-title">Il Mio Percorso</h2>
+                <div class="journey-head head-row">
+                    <h2 class="section-title appear">Il Mio Percorso</h2>
+                    <div class="quotes-nav appear">
+                        <button type="button" data-scroll-target=".journey-track" data-dir="-1" aria-label="Precedente">←</button>
+                        <button type="button" data-scroll-target=".journey-track" data-dir="1" aria-label="Successivo">→</button>
+                    </div>
                 </div>
                 <ol class="journey-track">
                     <li class="stop">
@@ -470,8 +474,8 @@
             <div class="wrap section-head head-row">
                 <h2 class="section-title appear">Testimonianze</h2>
                 <div class="quotes-nav appear">
-                    <button type="button" data-dir="-1" aria-label="Precedente">←</button>
-                    <button type="button" data-dir="1" aria-label="Successiva">→</button>
+                    <button type="button" data-scroll-target=".quotes" data-dir="-1" aria-label="Precedente">←</button>
+                    <button type="button" data-scroll-target=".quotes" data-dir="1" aria-label="Successiva">→</button>
                 </div>
             </div>
 

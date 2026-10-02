@@ -402,39 +402,31 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .certs-block { margin-top: clamp(72px, 10vw, 140px); }
 
 /* --------------------------------------------------------------------------
-   journey — horizontal on scroll
+   journey — timeline orizzontale scorrevole
    -------------------------------------------------------------------------- */
-.journey { position: relative; }
-.journey-pin {
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  height: 100svh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+.journey { position: relative; padding: clamp(96px, 14vw, 180px) 0; }
 .journey-head { padding: 0 var(--gutter); margin-bottom: clamp(32px, 5vw, 64px); }
 .journey-track {
   display: flex;
-  padding: 0 var(--gutter);
-  will-change: transform;
-  position: relative;
-  width: max-content;
+  padding: 0 var(--gutter) 8px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-left: var(--gutter);
+  scrollbar-width: none;
 }
-.journey-track::before {
+.journey-track::-webkit-scrollbar { display: none; }
+.stop { flex: 0 0 clamp(280px, 28vw, 400px); padding-right: 48px; position: relative; scroll-snap-align: start; }
+/* il filo che unisce le tappe */
+.stop::before {
   content: "";
   position: absolute;
-  left: var(--gutter);
+  left: 0;
   right: 0;
   top: 46px;
   height: 1.5px;
   background: var(--stroke);
-  transform-origin: left;
-  transform: scaleX(var(--progress, 0));
 }
-.stop { flex: 0 0 clamp(280px, 28vw, 400px); padding-right: 48px; position: relative; }
+.stop:last-child::before { right: auto; width: 13px; }
 .stop .year { font-family: var(--serif); font-style: italic; font-size: 28px; line-height: 1; display: block; height: 40px; }
 .stop .dot {
   width: 13px; height: 13px;
@@ -779,11 +771,11 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   .floater img { width: 44px; height: 44px; }
   .floater .note { display: none; }
 
-  .journey { height: auto !important; }
-  .journey-pin { position: static; height: auto; padding: 96px 0; }
-  .journey-track { flex-direction: column; transform: none !important; width: auto; padding-left: calc(var(--gutter) + 28px); }
-  .journey-track::before { left: calc(var(--gutter) + 6px); top: 0; bottom: 0; right: auto; width: 1.5px; height: auto; transform: none; }
+  .journey-head .quotes-nav { display: none; }
+  .journey-track { flex-direction: column; overflow: visible; scroll-snap-type: none; padding-left: calc(var(--gutter) + 28px); }
   .stop { flex: none; padding: 0 0 40px; }
+  .stop::before { left: -22px; right: auto; top: 8px; bottom: 0; width: 1.5px; height: auto; }
+  .stop:last-child::before { width: 1.5px; bottom: auto; height: 13px; }
   .stop .dot { position: absolute; left: -28px; top: 8px; margin: 0; }
   .stop .year { height: auto; margin-bottom: 4px; }
 
