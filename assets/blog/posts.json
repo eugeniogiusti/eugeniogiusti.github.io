@@ -1,5 +1,12 @@
 [
   {
+    "title": "La stessa commessa in quattro posti diversi: come è nato Novera",
+    "date": "2026-10-02",
+    "description": "Excel, email, cartelle e WhatsApp: come ascoltare i problemi quotidiani di un geometra è diventato Novera, la piattaforma che riunisce commesse, preventivi e incassi degli studi tecnici.",
+    "link": "/assets/blog/novera.html",
+    "image": "/assets/images/works/novera.png"
+  },
+  {
     "title": "I Built a Map App Because Google Maps Stopped Showing Me the City",
     "date": "2026-04-05",
     "description": "Spotly is an open source map app for slow travelers, powered by OpenStreetMap. No ads, no sponsored results — just real data and community tags to find where locals eat, work, and hang out.",
