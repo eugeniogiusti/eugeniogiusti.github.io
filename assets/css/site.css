@@ -155,7 +155,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 .btn-solid:hover { background: transparent; color: var(--ink); }
 
 /* --------------------------------------------------------------------------
-   hero — the tangled cable
+   hero — il cavo che disegna l'infrastruttura
    -------------------------------------------------------------------------- */
 .hero { position: relative; height: 260vh; }
 .hero-sticky {
@@ -165,29 +165,25 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   height: 100svh;
   overflow: hidden;
 }
-.hero-svg { position: absolute; inset: 0; width: 100%; height: 100%; }
-.hero-svg path {
+/* il disegno sta tra l'header e il titolo, senza deformarsi */
+.hero-svg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 90px;
+  bottom: 170px;
+  width: 100%;
+  height: calc(100% - 260px);
+  overflow: visible;
+}
+.hero-svg path,
+.hero-svg circle {
   fill: none;
   stroke: var(--stroke);
   stroke-width: 2.5;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-.hero-caption {
-  position: absolute;
-  font-size: 15px;
-  color: var(--ink-2);
-  opacity: 0;
-  transition: opacity .5s ease-out;
-  display: flex;
-  align-items: flex-end;
-  gap: 10px;
-  pointer-events: none;
-  max-width: 260px;
-}
-.hero-caption.is-visible { opacity: 1; }
-.hero-caption svg { width: 44px; height: 34px; flex: none; overflow: visible; }
-.hero-caption svg path { fill: none; stroke: var(--ink-2); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
 
 .hero-bottom {
   position: absolute;
@@ -756,6 +752,9 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   .menu-open .nav { opacity: 1; visibility: visible; }
 
   .hero { height: 200vh; }
+  .hero-svg { top: 80px; height: calc(100% - 380px); }
+  /* su mobile il disegno è rimpicciolito: tratto più spesso per restare visibile */
+  .hero-svg path, .hero-svg circle { stroke-width: 6; }
   .hero-bottom { flex-direction: column; align-items: flex-start; }
   .hero-cta { align-items: stretch; width: 100%; }
   .hero-cta p { text-align: left; }

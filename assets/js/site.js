@@ -30,21 +30,18 @@
   const observeReveals = (root) => root.querySelectorAll('.appear').forEach((el) => revealObserver.observe(el));
   observeReveals(document);
 
-  // === Hero: il cavo che si aggroviglia ===
+  // === Hero: il cavo disegna l'infrastruttura (portatile → router → rack → cloud → web) ===
   const hero = document.querySelector('.hero');
-  const heroSvg = hero.querySelector('.hero-svg');
-  const heroPath = heroSvg.querySelector('path');
-  const heroCaption = hero.querySelector('.hero-caption');
-  let heroLen = 0;
-  let heroStart = 0;
-  let introDone = reduceMotion;
-
-  function seeded(seed) {
-    return function () {
-      seed = (seed * 16807) % 2147483647;
-      return (seed - 1) / 2147483646;
-    };
-  }
+  const heroParts = [...hero.querySelectorAll('.hero-svg path, .hero-svg circle')].map((el) => {
+    const len = el.getTotalLength();
+    el.style.strokeDasharray = len;
+    el.style.strokeDashoffset = len;
+    return { el, len };
+  });
+  const heroTotal = heroParts.reduce((sum, p) => sum + p.len, 0);
+  // al caricamento si disegna da solo il primo tratto (cavo + portatile), il resto scorrendo
+  const heroStart = heroParts.slice(0, 4).reduce((sum, p) => sum + p.len, 0) / heroTotal;
+  let heroIntro = reduceMotion ? 1 : 0;
 
   // Catmull-Rom -> cubic bezier, per una linea morbida "disegnata a mano"
   function smoothPath(pts) {
@@ -63,72 +60,32 @@
     return d;
   }
 
-  function buildCable() {
-    const w = window.innerWidth;
-    const h = window.innerHeight;
-    const mobile = w < 720;
-    heroSvg.setAttribute('viewBox', `0 0 ${w} ${h}`);
-
-    const rand = seeded(7);
-    const cx = w * (mobile ? 0.5 : 0.5);
-    const cy = h * (mobile ? 0.36 : 0.42);
-    const r = Math.min(w, h) * (mobile ? 0.3 : 0.24);
-
-    // il cavo entra da sinistra (o dall'alto su mobile)
-    const lead = mobile
-      ? [[w * 0.55, -20], [w * 0.57, h * 0.06], [w * 0.52, h * 0.14]]
-      : [[-20, h * 0.5], [w * 0.08, h * 0.47], [w * 0.2, h * 0.53], [w * 0.32, h * 0.64]];
-
-    const loop = [];
-    let angle = mobile ? -Math.PI / 2 : Math.PI * 0.75;
-    for (let i = 0; i < 34; i++) {
-      angle += 1.05 + rand() * 0.75;
-      const rad = r * (0.3 + rand() * 0.75) * (i < 4 ? 1.1 : 1);
-      loop.push([cx + Math.cos(angle) * rad * 1.35, cy + Math.sin(angle) * rad]);
-    }
-
-    const leadPath = smoothPath(lead.concat(loop.slice(0, 1)));
-    heroPath.setAttribute('d', leadPath);
-    const leadLen = heroPath.getTotalLength();
-
-    heroPath.setAttribute('d', smoothPath(lead.concat(loop)));
-    heroLen = heroPath.getTotalLength();
-    heroStart = Math.min(0.6, (leadLen / heroLen) + 0.08);
-    heroPath.style.strokeDasharray = heroLen;
-
-    // la battuta compare accanto al groviglio
-    if (heroCaption) {
-      heroCaption.style.left = mobile ? `${w * 0.1}px` : `${Math.min(cx + r * 1.4, w - 280)}px`;
-      heroCaption.style.top = mobile ? `${cy + r * 1.15}px` : `${cy + r * 0.9}px`;
-    }
-  }
-
   function heroProgress() {
     const rect = hero.getBoundingClientRect();
     const total = hero.offsetHeight - window.innerHeight;
     return clamp(-rect.top / total, 0, 1);
   }
 
+  // traccia i pezzi in sequenza: ognuno parte quando il precedente è finito
   function drawCable() {
-    if (!introDone) return;
-    const p = heroProgress();
-    const drawn = reduceMotion ? 1 : heroStart + (1 - heroStart) * p;
-    heroPath.style.strokeDashoffset = heroLen * (1 - drawn);
-    if (heroCaption) heroCaption.classList.toggle('is-visible', drawn > 0.97);
+    const drawn = reduceMotion ? 1 : heroStart * heroIntro + (1 - heroStart) * heroProgress();
+    let left = drawn * heroTotal;
+    heroParts.forEach(({ el, len }) => {
+      const visible = clamp(left, 0, len);
+      el.style.strokeDashoffset = len - visible;
+      left -= len;
+    });
   }
 
-  buildCable();
   if (!reduceMotion) {
-    // intro: disegna la prima parte del cavo al caricamento
-    heroPath.style.strokeDashoffset = heroLen;
-    heroPath.getBoundingClientRect();
-    heroPath.style.transition = 'stroke-dashoffset 1800ms ease-out 300ms';
-    heroPath.style.strokeDashoffset = heroLen * (1 - heroStart);
-    setTimeout(() => {
-      heroPath.style.transition = 'stroke-dashoffset 120ms linear';
-      introDone = true;
+    const introStart = performance.now() + 300;
+    const introStep = (now) => {
+      heroIntro = clamp((now - introStart) / 1800, 0, 1);
+      heroIntro = 1 - Math.pow(1 - heroIntro, 3);
       drawCable();
-    }, 2150);
+      if (heroIntro < 1) requestAnimationFrame(introStep);
+    };
+    requestAnimationFrame(introStep);
   }
   drawCable();
 
@@ -196,9 +153,6 @@
     // su mobile la barra dell'indirizzo cambia l'altezza: rigenera solo se cambia la larghezza
     if (window.innerWidth === lastWidth && window.innerWidth < 720) return;
     lastWidth = window.innerWidth;
-    buildCable();
-    heroPath.style.transition = 'none';
-    drawCable();
     buildOffer();
     drawOffer();
   });
