@@ -449,6 +449,9 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
 }
 .work-card { grid-column: span 4; cursor: pointer; text-align: left; display: block; width: 100%; }
 .work-card.wide { grid-column: span 6; }
+.work-item { grid-column: span 4; }
+.work-links { margin-top: 8px; font-size: 14px; color: var(--ink-3); }
+.work-links a { color: var(--ink-2); text-decoration: underline; text-underline-offset: 3px; }
 .work-media {
   background: var(--card);
   border-radius: var(--radius);
@@ -723,7 +726,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   .services, .plans, .certs { grid-template-columns: 1fr; }
   .service { padding-right: 0; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
   .plans { gap: 28px; }
-  .work-card, .work-card.wide { grid-column: span 6; }
+  .work-card, .work-card.wide, .work-item { grid-column: span 6; }
   .post { grid-template-columns: minmax(0, 1fr) 100px; gap: 8px 20px; }
   .post .date { grid-column: 1; grid-row: 1; }
   .post .body { grid-column: 1; grid-row: 2; }
@@ -761,7 +764,7 @@ button { font: inherit; color: inherit; background: none; border: 0; padding: 0;
   .hero-cta .row .btn { flex: 1; min-width: 0; }
 
   .facts { grid-template-columns: 1fr 1fr; }
-  .work-card, .work-card.wide { grid-column: span 12; }
+  .work-card, .work-card.wide, .work-item { grid-column: span 12; }
 
   .tinker { min-height: auto; flex-direction: column; padding: 120px 0; }
   .floaters { position: static; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 40px; padding: 0 var(--gutter); }

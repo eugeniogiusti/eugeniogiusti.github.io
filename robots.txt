@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://eugeniogiustitechsolutions.com/sitemap.xml
+Sitemap: https://eugeniogiustitechsolutions.com/sitemap-blog.xml
